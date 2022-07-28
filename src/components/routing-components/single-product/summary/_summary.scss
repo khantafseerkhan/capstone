@@ -1,0 +1,241 @@
+
+/*
+Summary  Details
+*/
+
+.product-summary {
+    padding-left: 25px;
+
+    .flow {
+        text-align: left;
+        font: normal normal normal 14px/20px Muli;
+        letter-spacing: 0px;
+    }
+
+    .productdetails-section {
+        text-align: left;
+        font: normal normal 600 36px/45px Source Serif Pro;
+        letter-spacing: 0px;
+        color: #172026;
+
+        .title-section {
+            text-align: left;
+
+            font: normal normal 600 36px/45px Source Serif Pro;
+            letter-spacing: 0px;
+            color: #172026;
+            line-height: 45px;
+            padding: 5px;
+        }
+
+        .price-section {
+            text-align: left;
+
+            font: normal normal 600 20px/30px Muli;
+            letter-spacing: 0px;
+            color: #172026;
+            padding: 5px;
+            line-height: 20px;
+        }
+
+        .rating-section {
+            text-align: left;
+            font: normal normal 600 20px/30px Muli;
+            letter-spacing: 0px;
+            color: #172026;
+            padding: 5px;
+        }
+
+        .summary-section {
+            text-align: left;
+
+            font: normal normal normal 16px/24px Muli;
+            letter-spacing: 0px;
+            padding: 5px;
+            line-height: 24px;
+
+        }
+
+    }
+
+
+
+    .selection-section {
+
+        .color-section {
+
+            padding: 5px;
+
+            .title-section {
+                text-align: left;
+                font: normal normal 600 20px/30px Muli;
+                letter-spacing: 0px;
+                color: #172026;
+            }
+
+            ul {
+                list-style: none;
+
+                margin: 0;
+                margin-left: -34px;
+
+                li {
+                    padding: 5px;
+                    display: unset;
+
+                    button {
+                        text-align: center;
+                        font: normal normal 600 16px/20px Muli;
+                        letter-spacing: 0.32px;
+                        color: #545D63;
+
+                        border: 1px solid #91959C;
+                        border-radius: 6px;
+                        width: 63px;
+                        height: 31px;
+                        width: 64px;
+                        height: 40px;
+                        background: none;
+                    }
+                }
+            }
+        }
+
+        .size-section {
+            padding: 5px;
+
+            .title-section {
+                text-align: left;
+                font: normal normal 600 20px/30px Muli;
+                letter-spacing: 0px;
+                color: #172026;
+            }
+
+            ul {
+                list-style: none;
+                margin: 0;
+                margin-left: -34px;
+
+                li {
+                    padding: 5px;
+
+                    display: unset;
+
+                    button {
+                        text-align: center;
+                        font: normal normal 600 16px/20px Muli;
+                        letter-spacing: 0.32px;
+                        color: #545D63;
+
+                        border: 1px solid #91959C;
+                        border-radius: 6px;
+                        width: 63px;
+                        height: 31px;
+                        width: 64px;
+                        height: 40px;
+                        background: none;
+                        margin-top: 8px;
+                    }
+                }
+            }
+        }
+
+        .quntity-section {
+            padding: 5px;
+
+            .title-section {
+                text-align: left;
+                font: normal normal 600 20px/30px Muli;
+                letter-spacing: 0px;
+                color: #172026;
+            }
+
+            input {
+                width: 34px;
+                border: 2px solid var(--gray-m1);
+                background: #FFFFFF 0% 0% no-repeat padding-box;
+                border: 2px solid #91959C;
+                border-radius: 8px;
+                width: 114px;
+                height: 40px;
+                margin-left: 9px;
+                margin-right: 9px;
+                text-align: center;
+            }
+
+            button {
+                border-radius: 50%;
+                background: #EAEBEB 0% 0% no-repeat padding-box;
+                border: 2px solid #B5B8BA;
+
+                text-align: center;
+                font: normal normal 600 16px/20px Muli;
+                letter-spacing: 0.32px;
+                color: #545D63;
+
+                width: 32px;
+                height: 32px;
+            }
+        }
+
+
+
+
+    }
+
+    .add-section {
+        padding: 5px;
+        margin-top: 14px;
+
+        button {
+            /* UI Properties */
+            background: var(--primary-brand) 0% 0% no-repeat padding-box;
+            background: #1F39FF 0% 0% no-repeat padding-box;
+            border-radius: 28px;
+            width: 95%;
+            height: 40px;
+            border: none;
+            text-align: center;
+            font: normal normal bold 14px/16px Muli;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            text-transform: uppercase;
+        }
+
+        img {}
+
+
+        div {
+            text-align: center;
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            a {
+                padding: 25px;
+                text-align: left;
+                font: normal normal 600 16px/20px Muli;
+                letter-spacing: 0.32px;
+                color: #172026;
+                text-decoration: none;
+
+                span {
+                    text-align: left;
+                    font: normal normal 600 16px/20px Muli;
+                    letter-spacing: 0.32px;
+                    color: #172026;
+                    padding-left: 6px;
+                }
+
+            }
+
+        }
+    }
+}
+
+
+.activeImage {
+    img {
+        width: -webkit-fill-available;
+    }
+}

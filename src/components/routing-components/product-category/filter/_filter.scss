@@ -1,0 +1,37 @@
+.filters{
+
+    .head{
+        text-align: left;
+        font: normal normal normal 20px/14px Muli;
+        letter-spacing: 0px;
+        color: #181C24;
+        line-height: 24px;
+        opacity: 1;
+    }
+
+    .filter-section{
+
+        .title{
+            text-align: left;
+            font: normal normal 600 16px/24px Muli;
+            letter-spacing: 0px;
+            color: #181C24;
+            line-height: 24px;
+            opacity: 1;
+            
+        }
+        ul{
+
+            margin-left: -32px;
+            list-style: none;
+            li{
+                text-align: left;
+                font: normal normal normal 16px/22px Muli;
+                letter-spacing: 0px;
+                color: #181C24;
+                line-height: 22px;
+                opacity: 1;
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+
+
+@import "./filter/_filter.scss";
+@import "./product/_product.scss";
+.product-head-section{
+    height: 44px;
+.filters-flow{
+    text-align: left;
+font: normal normal normal 16px/24px Muli;
+letter-spacing: 0px;
+opacity: 1;
+}
+
+.result{
+    text-align: left;
+font: normal normal 600 16px/20px Muli;
+letter-spacing: 0px;
+color: #172026;
+opacity: 1;
+}
+
+.select{
+
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 2px solid #B5B7BC;
+    border-radius: 8px;
+    opacity: 1;
+
+    text-align: left;
+font: normal normal normal 16px/24px Muli;
+letter-spacing: 0px;
+color: #172026;
+opacity: 1;
+height: 44px;
+width: 100%;
+}
+}
+
+
+

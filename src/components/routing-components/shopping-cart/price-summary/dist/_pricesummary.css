@@ -1,0 +1,63 @@
+/*
+Price Summay css ===========================================
+*/
+.summary-card {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 8px #0000000D;
+  border: 1px solid #D1D3D6;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+.summary-card .title-section {
+  text-align: left;
+  font: normal normal 600 20px/25px Muli;
+  letter-spacing: 0px;
+  color: #172026;
+}
+
+.summary-card .containt ul {
+  list-style: none;
+  margin-left: -34px;
+}
+
+.summary-card .containt ul li {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  font: normal normal normal 16px/24px Muli;
+  letter-spacing: 0px;
+  color: #172026;
+}
+
+.summary-card .containt ul .total {
+  text-align: left;
+  font: normal normal bold 16px/24px Muli;
+  letter-spacing: 0px;
+  color: #172026;
+}
+
+.summary-card .checkout {
+  padding-bottom: 10px;
+}
+
+.summary-card .checkout button {
+  width: 247px;
+  height: 40px;
+  /* UI Properties */
+  background: var(--primary-brand) 0% 0% no-repeat padding-box;
+  background: #1F39FF 0% 0% no-repeat padding-box;
+  border-radius: 28px;
+  border: none;
+  text-align: center;
+  font: normal normal bold 14px/16px Muli;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.summary-card .pay {
+  padding-bottom: 10px;
+}
+
+/*# sourceMappingURL=_pricesummary.css.map */

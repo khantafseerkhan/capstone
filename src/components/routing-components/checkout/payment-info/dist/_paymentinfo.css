@@ -1,0 +1,27 @@
+.form-section .title {
+  text-align: left;
+  font: normal normal 600 20px/25px Muli;
+  letter-spacing: 0px;
+  color: #172026;
+  line-height: 25px;
+}
+
+.form-section .list-section ul {
+  list-style: none;
+}
+
+.form-section .list-section ul li {
+  text-align: left;
+  letter-spacing: 0px;
+  color: #172026;
+  line-height: 24px;
+}
+
+.form-section .list-section ul li input {
+  border: 2px solid var(--primary-brand);
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 2px solid #E26A2C;
+  opacity: 1;
+}
+
+/*# sourceMappingURL=_paymentinfo.css.map */

@@ -1,0 +1,130 @@
+.footer-nav {
+
+    .title {
+
+        text-align: left;
+        font: normal normal 600 16px/24px Muli;
+        letter-spacing: 0px;
+        color: #172026;
+        opacity: 1;
+    }
+
+    nav {
+        ul {
+            list-style: none;
+            margin-left: -40px;
+
+            li {
+                text-align: left;
+
+                a {
+                    text-align: left;
+                    font: normal normal normal 16px/24px Muli;
+                    letter-spacing: 0px;
+                    color: #545D63;
+                    opacity: 1;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+
+.footer-rights {
+
+    .footer-log {
+        text-align: left;
+        font-size: 18px;
+        letter-spacing: 10px;
+
+        .right-slash {
+            font-size: 20px;
+            font-weight: bold;
+            color: #FFD07F;
+            letter-spacing: 0px;
+
+        }
+
+        .left-slash {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+    }
+
+
+    .copy-right-section {
+        margin-top: 10px;
+        text-align: center;
+        font: normal normal normal 14px/18px Muli;
+        letter-spacing: 0px;
+        color: #545D63;
+        opacity: 1;
+        line-height: 17.5px;
+    }
+
+
+    .policy-section {
+
+        margin-top: -11px;
+        ul {
+            list-style: none;
+            margin-left: -40px;
+            display: flex;
+            float: right;
+            li {
+                text-align: right;
+                margin-right: 17px;
+
+                a {
+                    text-decoration: underline;
+                    font: normal normal normal 14px/18px Proxima Nova;
+                    letter-spacing: 0px;
+                    color: #172026;
+                    opacity: 1;
+                    line-height: 17.5px;
+
+                }
+            }
+        }
+    }
+}
+
+
+
+//for phone
+
+@media screen and (max-width: 1200px ) {
+    .footer-rights{
+        .policy-section {
+            ul{
+                float: unset;
+                justify-content: center;
+
+            }
+        }
+    }
+
+    .revertDiv{
+        display:flex !important;
+
+        flex-direction: column-reverse;
+    }
+}
+@media screen and (max-width: 768px) {
+    .footer-rights{
+        .policy-section {
+            ul{
+                float: unset;
+                justify-content: center;
+
+            }
+        }
+    }
+
+    .revertDiv{
+        display:flex !important;
+        flex-direction: column-reverse;
+    }
+}

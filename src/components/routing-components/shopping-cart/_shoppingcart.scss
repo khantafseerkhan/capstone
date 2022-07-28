@@ -1,0 +1,23 @@
+@import "./added-product/_addedproduct.scss";
+@import "./price-summary/_pricesummary.scss";
+
+@import "./shipping-section/_shippingsection.scss";
+@import "./recently-viewed/_recentlyviewed.scss";
+
+
+.page-title {
+    text-align: center;
+    font: normal normal 600 48px/45px Source Serif Pro;
+    letter-spacing: 0px;
+    color: #172026;
+    line-height: 45px;
+    opacity: 1;
+
+    hr {
+        width: 102px;
+        height: 8px;
+        /* UI Properties */
+        background: #E26A2C 0% 0% no-repeat padding-box;
+        opacity: 1;
+    }
+}

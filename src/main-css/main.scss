@@ -1,0 +1,182 @@
+@import "../components/header/_header.scss";
+@import "../components/footer/_footer.scss";
+@import "../components/routing-components/home/_home.scss";
+@import "../components/paginations/_pagination.scss";
+
+@import "../components/routing-components/product-category/_productcategory.scss";
+
+@import "../components/routing-components/single-product/_singleproduct.scss";
+
+@import "../components/routing-components/shopping-cart/_shoppingcart.scss";
+@import "../components/routing-components/checkout/_checkout.scss";
+@import "../components/custom/_input.scss";
+//custom fonts
+
+
+
+@mixin custombutton($backgroundcolor) {
+  background: $backgroundcolor;
+  border: 2px solid #D4703D;
+  color:$backgroundcolor,
+
+}
+@font-face {
+  font-family: Muli;
+  src: url("../assets/fonts/muli/muli/Muli-Regular.ttf");
+}
+
+@font-face {
+  font-family: Source Serif Pro;
+  src: url("../assets/fonts/source-serif-pro/SourceSerifPro-Semibold.otf");
+}
+
+
+
+//=======
+.app {
+  text-align: center;
+}
+
+.app-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .app-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.center-box{
+  justify-content: center;
+  text-align: -webkit-center !important;
+
+}
+.app-link {
+  color: #61dafb;
+}
+
+@keyframes app-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+//==============tab and phone css
+
+
+
+@media screen and (min-width: 1200px) {
+
+
+
+  .tab-hide {
+      display: initial;
+  }
+
+  .tab-show {
+      display: none;
+  }
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+
+  .phone-show {
+      display: none !important;
+  }
+
+  .phone-hide {
+      display: initial !important;
+
+  }
+}
+
+//for phone
+
+@media screen and (max-width: 768px) {
+
+
+  .phone-show {
+      display: initial !important;
+  }
+
+  .phone-hide {
+      display: none !important;
+
+  }
+  .phone-center{
+      text-align: center !important;
+  
+  }
+
+
+}
+
+
+
+//for tablet  
+
+
+@media screen and (max-width: 1200px) {
+
+  .tab-hide {
+      display: none !important;
+  }
+
+  .tab-show {
+      display: initial !important;
+  }
+
+  .tab-center{
+      text-align: center !important;
+  
+  }
+}
+
+
+
+
+
+.border-inside-bottom-3{
+  border-bottom: 3px inset;
+}
+
+.border-inside-bottom-2{
+  border-bottom: 2px inset;
+}
+.border-inside-bottom-1{
+  border-bottom: 1px inset;
+}
+
+
+.border-inside-top-3{
+  border-top: 3px inset;
+}
+
+.border-inside-top-2{
+  border-top: 2px inset;
+}
+.border-inside-top-1{
+  border-top: 1px inset;
+}
+
+.unset-float{
+  float: unset !important;
+}
+
+.align-to-left{
+  justify-content: left !important;
+  text-align: left !important;
+  text-align: -webkit-left !important;
+}
+
+

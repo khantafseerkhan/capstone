@@ -1,0 +1,74 @@
+
+/*
+Descriptioin cssss
+
+
+*/
+
+
+.product-description-head {
+    text-align: left;
+
+    font: normal normal 600 36px/45px Source Serif Pro;
+    letter-spacing: 0px;
+    color: #172026;
+    padding: 20px;
+
+    line-height:45px;
+}
+
+.product-description-section {
+
+    padding: 20px;
+
+    .title {
+        text-align: left;
+
+        font: normal normal 600 20px/25px Muli;
+        letter-spacing: 0px;
+        color: #172026;
+    }
+
+    .description {
+        text-align: left;
+
+        font: normal normal normal 16px/24px Muli;
+        letter-spacing: 0px;
+        color: #172026;
+        margin-top: 15px;
+        line-height: 24px;
+    
+
+    }
+}
+
+
+.product-details-section {
+    padding: 20px;
+
+    .title {
+        text-align: left;
+        font: normal normal 600 20px/25px Muli;
+        letter-spacing: 0px;
+        color: #172026;
+    }
+
+    .description {
+        text-align: left;
+        font: normal normal 600 16px/20px Muli;
+        letter-spacing: 0px;
+        color: #172026;
+
+        margin-top: 15px;
+
+        .containt-grid {
+            display: flex;
+
+            div {
+                width: 50%;
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,184 @@
+.top-banner {
+    background: #39373729;
+    height: 650px;
+
+    .detail-section {
+
+        padding: 50px;
+
+        .title {
+            text-align: left;
+            font: normal normal 600 48px/60px Source Serif Pro;
+            letter-spacing: 0px;
+            color: #172026;
+            opacity: 1;
+            line-height: 60px;
+        }
+
+        .subtitle {
+            text-align: left;
+            font: normal normal normal 16px/24px Muli;
+            letter-spacing: 0px;
+            color: #172026;
+            opacity: 1;
+            line-height: 24px;
+        }
+
+
+        .btn-section {
+            text-align: left;
+            margin-top: 20px;
+
+            button {
+                width: 221px;
+                height: 40px;
+            }
+
+        }
+    }
+
+
+    .image-section {
+        img {
+            width: -webkit-fill-available;
+            height: 650px;
+        }
+    }
+}
+
+.product-category-card-container {
+    width: 200px;
+    height: 201px;
+    position: relative;
+    margin-top: -20px;
+
+    img {
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
+    }
+
+    .footer-section {
+        height: 65px;
+        /* UI Properties */
+        background: #1B252CD9 0% 0% no-repeat padding-box;
+        opacity: 1;
+        position: absolute;
+        bottom: 0px;
+        width: inherit;
+        border-bottom: 6px solid #E26A2C;
+
+        .title {
+            text-align: left;
+            font: normal normal 600 24px/30px Source Serif Pro;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            line-height: 30px;
+            margin: 5px;
+        }
+
+        .sub-title {
+            text-align: left;
+            font: normal normal normal 16px/23px Muli;
+            letter-spacing: 0.32px;
+            color: #FFFFFF;
+            opacity: 1;
+            line-height: 23px;
+            margin: 5px;
+        }
+
+    }
+}
+
+.banner2-section {
+
+    margin-top: 30px;
+
+
+    .text-section {
+
+        .title {
+            text-align: left;
+            font: normal normal 600 48px/60px Source Serif Pro;
+            letter-spacing: 0px;
+            color: #172026;
+            line-height: 60px;
+            opacity: 1;
+        }
+
+        .subtitle {
+            text-align: left;
+            font: normal normal 600 20px/25px Muli;
+            letter-spacing: 0px;
+            color: #172026;
+            line-height: 25px;
+            opacity: 1;
+        }
+
+        .para {
+            text-align: left;
+            font: normal normal normal 16px/24px Muli;
+            letter-spacing: 0px;
+            color: #172026;
+            line-height: 24px;
+            opacity: 1;
+        }
+
+        .btn-section {
+            text-align: left;
+            margin-top: 20px;
+
+            button {
+                width: 221px;
+                height: 40px;
+            }
+
+        }
+
+        hr {
+            width: 102px;
+            height: 8px;
+
+            background: #E26A2C 0% 0% no-repeat padding-box;
+            opacity: 1;
+            margin-top: 20px;
+            float: left;
+        }
+    }
+
+
+    .img-section {
+
+        img {
+            width: -webkit-fill-available;
+
+            height: 350px;
+
+        }
+    }
+}
+
+
+@mixin custombutton($backgroundcolor) {
+    background: $backgroundcolor;
+    border: 2px solid #D4703D;
+
+    opacity: 1;
+
+
+
+}
+
+.orangebtn {
+    @include custombutton(#D4703D 0% 0% no-repeat padding-box, );
+    color: white;
+}
+
+.whitebtn {
+    @include custombutton(#FFFFFF 0% 0% no-repeat padding-box);
+    color: black
+}
+
+.transparent {
+    @include custombutton(transparent 0% 0% no-repeat padding-box);
+    color: inherit
+}
