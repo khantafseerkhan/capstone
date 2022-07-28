@@ -1096,6 +1096,11 @@ Price Summay css ===========================================
   padding-bottom: 10px;
 }
 
+.summary-card .center {
+  text-align: -webkit-center;
+  text-align: center;
+}
+
 .shipping-section {
   background: #FFFFFF 0% 0% no-repeat padding-box;
   border: 1px solid #D1D3D6;
@@ -1205,6 +1210,10 @@ Price Summay css ===========================================
   opacity: 1;
 }
 
+.summary-card {
+  padding: 10px;
+}
+
 .sign-section .details {
   text-align: left;
   font: normal normal 600 20px/25px Muli;
@@ -1252,15 +1261,16 @@ Price Summay css ===========================================
   opacity: 1;
 }
 
-.contact-info .title {
+.form-section .subhead {
   text-align: left;
   font: normal normal 600 20px/25px Muli;
   letter-spacing: 0px;
   color: #172026;
   line-height: 25px;
+  margin: 7px 0px;
 }
 
-.contact-info p {
+.form-section p {
   text-align: left;
   font: normal normal normal 16px/25px Muli;
   letter-spacing: 0px;
@@ -1274,6 +1284,44 @@ Price Summay css ===========================================
   letter-spacing: 0px;
   color: #172026;
   line-height: 25px;
+}
+
+.details-section {
+  height: 176px;
+  /* UI Properties */
+  border: 1px solid #D1D3D6;
+  border-radius: 2px;
+  opacity: 1;
+  padding: 20px;
+}
+
+.details-section .subhead {
+  text-align: left;
+  font: normal normal 600 16px/20px Muli;
+  letter-spacing: 0px;
+  color: #172026;
+  line-height: 20px;
+  margin: 7px 0px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.details-section .left-info .content {
+  text-align: left;
+  font: normal normal normal 16px/24px Muli;
+  letter-spacing: 0px;
+  color: #535965;
+  line-height: 24px;
+  padding: 4px;
+}
+
+.details-section .right-info .content {
+  text-align: left;
+  font: normal normal normal 16px/24px Muli;
+  letter-spacing: 0px;
+  color: #535965;
+  line-height: 24px;
 }
 
 .form-section .title {
@@ -1300,6 +1348,93 @@ Price Summay css ===========================================
   background: #FFFFFF 0% 0% no-repeat padding-box;
   border: 2px solid #E26A2C;
   opacity: 1;
+}
+
+.details-section {
+  height: 176px;
+  /* UI Properties */
+  border: 1px solid #D1D3D6;
+  border-radius: 2px;
+  opacity: 1;
+  width: initial;
+  padding: 20px;
+}
+
+.details-section .subhead {
+  text-align: left;
+  font: normal normal 600 16px/20px Muli;
+  letter-spacing: 0px;
+  color: #172026;
+  line-height: 20px;
+  margin: 7px 0px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.details-section .left-info .content {
+  text-align: left;
+  font: normal normal normal 16px/24px Muli;
+  letter-spacing: 0px;
+  color: #535965;
+  line-height: 24px;
+  padding: 4px;
+}
+
+.details-section .right-info .content {
+  text-align: left;
+  font: normal normal normal 16px/24px Muli;
+  letter-spacing: 0px;
+  color: #535965;
+  line-height: 24px;
+}
+
+.order-container {
+  border: 1px solid #D1D3D6;
+  border-radius: 2px;
+}
+
+.order-container .subhead {
+  text-align: left;
+  font: normal normal 600 16px/20px Muli;
+  letter-spacing: 0px;
+  color: #172026;
+  line-height: 20px;
+}
+
+.order-container .item-card .img-container img {
+  width: 100px;
+  height: 120px;
+}
+
+.order-container .item-card .detail-container ul {
+  list-style: none;
+}
+
+.order-container .item-card .detail-container ul li {
+  text-align: left;
+  font: normal normal normal 16px/24px Muli;
+  letter-spacing: 0px;
+  color: #172026;
+  line-height: 24px;
+}
+
+.button-section button {
+  width: 300px !important;
+  height: 40px !important;
+}
+
+.button-section .note {
+  text-align: center;
+  text-decoration: underline;
+  font: normal normal 600 16px/24px Muli;
+  letter-spacing: 0px;
+  line-height: 24px;
+}
+
+.button-section .note a {
+  text-decoration: underline;
+  line-height: 24px;
 }
 
 .check-inputbox {
@@ -1355,8 +1490,7 @@ Price Summay css ===========================================
   width: 347px;
   height: 40px;
   /* UI Properties */
-  background: var(--white) 0% 0% no-repeat padding-box;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+  background: transparent 0% 0% no-repeat padding-box x;
   border: 2px solid #D4703D;
   color: inherit !important;
   text-align: center;
@@ -1369,10 +1503,81 @@ Price Summay css ===========================================
   width: 347px;
   height: 40px;
   /* UI Properties */
-  background: var(--white) 0% 0% no-repeat padding-box;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+  background: #FFFFFF 0% 0% no-repeat padding-box x;
   border: 2px solid #D4703D;
   color: #D4703D !important;
+}
+
+.orangebtn {
+  width: 347px;
+  height: 40px;
+  /* UI Properties */
+  background: #D4703D 0% 0% no-repeat padding-box x;
+  border: 2px solid #D4703D;
+  color: white !important;
+  text-align: center;
+  font: normal normal bold 14px/16px Muli;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+}
+
+.order-details .order-title {
+  text-align: left;
+  font: normal normal 600 20px/25px Muli;
+  letter-spacing: 0px;
+  color: #172026;
+  line-height: 25px;
+}
+
+.order-details .succssorder-container {
+  border: none;
+  border-radius: 0px;
+}
+
+.order-details .succssorder-container .subhead {
+  text-align: left;
+  font: normal normal 600 16px/20px Muli;
+  letter-spacing: 0px;
+  color: #172026;
+  line-height: 20px;
+}
+
+.order-details .succssorder-container .item-card .img-container img {
+  width: 100px;
+  height: 120px;
+}
+
+.order-details .succssorder-container .item-card .detail-container ul {
+  list-style: none;
+}
+
+.order-details .succssorder-container .item-card .detail-container ul li {
+  text-align: left;
+  font: normal normal normal 16px/24px Muli;
+  letter-spacing: 0px;
+  color: #172026;
+  line-height: 24px;
+}
+
+.order-details .shipping-details-container .container {
+  margin-top: 20px;
+}
+
+.order-details .shipping-details-container .container h6 {
+  text-align: left;
+  font: normal normal 600 16px/20px Muli;
+  letter-spacing: 0px;
+  color: #172026;
+  line-height: 20px;
+  margin: 7px 0px;
+}
+
+.order-details .shipping-details-container .container .content {
+  text-align: left;
+  font: normal normal normal 16px/24px Muli;
+  letter-spacing: 0px;
+  color: #535965;
+  line-height: 24px;
 }
 
 @font-face {
@@ -1510,5 +1715,9 @@ Price Summay css ===========================================
           justify-content: left !important;
   text-align: left !important;
   text-align: -webkit-left !important;
+}
+
+.bottom-margin-10 {
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=main.css.map */

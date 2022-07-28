@@ -4,8 +4,7 @@
     width: 347px;
     height: 40px;
     /* UI Properties */
-    background: var(--white) 0% 0% no-repeat padding-box;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: $background x;
     border: 2px solid #D4703D;
     color:$color
 
@@ -85,4 +84,12 @@ box-shadow: 0 0 10px #719ECE;
 
 .whitebtn{
     @include custombutton( #FFFFFF 0% 0% no-repeat padding-box,#D4703D !important,2px solid #D4703D, 347px );
+}
+
+.orangebtn{
+    @include custombutton( #D4703D 0% 0% no-repeat padding-box,white !important,2px solid #D4703D, 347px );
+    text-align: center;
+    font: normal normal bold 14px/16px Muli;
+    letter-spacing: 0px;
+    text-transform: uppercase;
 }

@@ -7,15 +7,16 @@
   opacity: 1;
 }
 
-.contact-info .title {
+.form-section .subhead {
   text-align: left;
   font: normal normal 600 20px/25px Muli;
   letter-spacing: 0px;
   color: #172026;
   line-height: 25px;
+  margin: 7px 0px;
 }
 
-.contact-info p {
+.form-section p {
   text-align: left;
   font: normal normal normal 16px/25px Muli;
   letter-spacing: 0px;
@@ -29,6 +30,42 @@
   letter-spacing: 0px;
   color: #172026;
   line-height: 25px;
+}
+
+.details-section {
+  height: 176px;
+  /* UI Properties */
+  border: 1px solid #D1D3D6;
+  border-radius: 2px;
+  opacity: 1;
+  padding: 20px;
+}
+
+.details-section .subhead {
+  text-align: left;
+  font: normal normal 600 16px/20px Muli;
+  letter-spacing: 0px;
+  color: #172026;
+  line-height: 20px;
+  margin: 7px 0px;
+  width: max-content;
+}
+
+.details-section .left-info .content {
+  text-align: left;
+  font: normal normal normal 16px/24px Muli;
+  letter-spacing: 0px;
+  color: #535965;
+  line-height: 24px;
+  padding: 4px;
+}
+
+.details-section .right-info .content {
+  text-align: left;
+  font: normal normal normal 16px/24px Muli;
+  letter-spacing: 0px;
+  color: #535965;
+  line-height: 24px;
 }
 
 /*# sourceMappingURL=_shipping-info.css.map */

@@ -10,6 +10,7 @@
 @import "../components/routing-components/shopping-cart/_shoppingcart.scss";
 @import "../components/routing-components/checkout/_checkout.scss";
 @import "../components/custom/_input.scss";
+@import "../components/routing-components/order-success/_ordersuccess.scss";
 //custom fonts
 
 
@@ -179,4 +180,9 @@
   text-align: -webkit-left !important;
 }
 
+
+.bottom-margin-10{
+
+  margin-bottom: 10px;
+}
 

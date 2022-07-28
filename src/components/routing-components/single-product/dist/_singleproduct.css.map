@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["_singleproduct.scss"],"sourcesContent":["@import \"./description/_description.scss\";\r\n@import \"./presentation-images/_presentationimages.scss\";\r\n@import \"./summary/_summary.scss\";"],"file":"_singleproduct.css"}

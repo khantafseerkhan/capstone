@@ -1,0 +1,80 @@
+.order-details {
+
+    .order-title {
+        text-align: left;
+        font: normal normal 600 20px/25px Muli;
+        letter-spacing: 0px;
+        color: #172026;
+        line-height: 25px;
+    }
+
+
+    .succssorder-container {
+
+        border: none;
+        border-radius: 0px;
+
+        .subhead {
+            text-align: left;
+            font: normal normal 600 16px/20px Muli;
+            letter-spacing: 0px;
+            color: #172026;
+            line-height: 20px;
+        }
+
+        .item-card {
+
+            .img-container {
+
+                img {
+                    width: 100px;
+                    height: 120px;
+                }
+            }
+
+            .detail-container {
+
+                ul {
+                    list-style: none;
+
+                    li {
+                        text-align: left;
+                        font: normal normal normal 16px/24px Muli;
+                        letter-spacing: 0px;
+                        color: #172026;
+                        line-height: 24px;
+
+                        span {}
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    .shipping-details-container {
+        .container {
+            margin-top: 20px;
+
+            h6 {
+                text-align: left;
+                font: normal normal 600 16px/20px Muli;
+                letter-spacing: 0px;
+                color: #172026;
+                line-height: 20px;
+                margin: 7px 0px;
+
+            }
+
+            .content {
+                text-align: left;
+                font: normal normal normal 16px/24px Muli;
+                letter-spacing: 0px;
+                color: #535965;
+                line-height: 24px;
+            }
+        }
+    }
+
+}

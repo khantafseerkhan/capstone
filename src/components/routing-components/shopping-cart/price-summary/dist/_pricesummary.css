@@ -60,4 +60,9 @@ Price Summay css ===========================================
   padding-bottom: 10px;
 }
 
+.summary-card .center {
+  text-align: -webkit-center;
+  text-align: center;
+}
+
 /*# sourceMappingURL=_pricesummary.css.map */

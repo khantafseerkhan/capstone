@@ -1,7 +1,12 @@
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 const Pricesummary = (props) => {
 
+    let navigate=useNavigate();
+    const redirect=()=>{
+        navigate("/checkout");
+    }
     let pricesummary={
      subtotal:useSelector(state => state.updateCartProduct.totalOfall),
      coupon:useSelector(state => state.updateCartProduct.coupon),
@@ -49,9 +54,11 @@ const Pricesummary = (props) => {
                 </ul>
             </div>
 
-            <div className="checkout center"><button type="button"  role='button' aria-label='Check Out'>checkout</button></div>
+            <div>
+            <div className="checkout center"><button type="button"  role='button' aria-label='Check Out' onClick={()=>redirect()}>checkout</button></div>
             <div className="pay center"  role='button' aria-label='Pay Pal'><img src={require("../../../../assets/img/PP_BTN.png")} alt="Pay Pal"/></div>
 
+            </div>
 
         </div>
     )

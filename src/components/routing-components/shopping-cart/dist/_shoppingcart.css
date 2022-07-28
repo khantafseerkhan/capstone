@@ -146,6 +146,11 @@ Price Summay css ===========================================
   padding-bottom: 10px;
 }
 
+.summary-card .center {
+  text-align: -webkit-center;
+  text-align: center;
+}
+
 .shipping-section {
   background: #FFFFFF 0% 0% no-repeat padding-box;
   border: 1px solid #D1D3D6;
