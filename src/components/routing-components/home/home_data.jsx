@@ -40,6 +40,13 @@ export let homeData={
         title:"Take off in the new Signature Legging",
         subtitle:"Lorem Ipsum Dolor Tempor",
         para:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor labore dolore magna lorem ipsum dolor sit dolore magna."
+    },
+
+    banner3:{
+        img:'https://media.istockphoto.com/photos/attractive-businessmen-on-the-street-picture-id1065840316?k=20&m=1065840316&s=612x612&w=0&h=xsR2_8ce0thEk6tRFh8_SFqACI1EPOOWBP7Gkes8tfA=',
+        title:"Conquer your next adventure",
+        subtitle:"Lorem Ipsum Dolor Tempor",
+        para:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor labore dolore magna lorem ipsum dolor sit dolore magna."
     }
 
 };

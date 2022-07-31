@@ -1,3 +1,10 @@
 @import "./description/_description.scss";
 @import "./presentation-images/_presentationimages.scss";
 @import "./summary/_summary.scss";
+
+.product-top{
+    text-align: left;
+font: normal normal normal 14px/20px Muli;
+letter-spacing: 0px;
+line-height: 20px;
+}

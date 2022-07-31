@@ -15,7 +15,7 @@ const CheckoutPrice=(props)=>{
     return (
         <div className="aem-GridColumn aem-GridColumn--default--12">
         <div className="summary-card">
-            <div className="title-section">Price summary</div>
+            <div className="title-section">Pricing Summary</div>
 
 
             <div className="containt">

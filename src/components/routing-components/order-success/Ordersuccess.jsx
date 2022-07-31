@@ -130,7 +130,18 @@ const Ordersuccess = (props) => {
                         </div>
                     </div>
                     <div className="aem-GridColumn aem-GridColumn--default--4 align-to-left bottom-margin-10">
-                        poster
+                        <div className="poster">
+                                <div className="poster-title">Give us a follow to SAVE 20% on your next order.</div>
+
+                                <ul>
+                                    <li><a href="javascript:void(0)" role='button' aria-label='Instagram'  ><img src={require("../../../assets/img/instagram_w.png")} alt="Instagram"  /></a></li>
+                                    <li><a href="javascript:void(0)" role='button' aria-label='Facebook'  ><img src={require("../../../assets/img/facebook_w.png")} alt="Facebook"  /></a></li>
+
+                                    <li><a href="javascript:void(0)" role='button' aria-label='Twiter'><img src={require("../../../assets/img/twitter_w.png")} alt="Twitter"  /></a></li>
+
+                                </ul>
+                        </div>
+                        
                     </div>
                 </div>
 

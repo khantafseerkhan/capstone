@@ -2,7 +2,7 @@ const SignInOption = (props) => {
 
 
     return (
-        <div className="aem-GridColumn aem-GridColumn--default--12">
+        <div className="aem-GridColumn aem-GridColumn--default--12 tab-hide phone-hide">
             <div className="summary-card">
                 <div className="aem-Grid aem-Grid--12 align-to-left sign-section">
                     <div className="aem-GridColumn aem-GridColumn--default--6">

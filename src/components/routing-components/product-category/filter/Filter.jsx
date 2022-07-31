@@ -1,6 +1,6 @@
+const filterBy=[];
 
 const Filter = (props) => {
-
     const filterList = [
         {
             type: "Categories",
@@ -26,12 +26,24 @@ const Filter = (props) => {
     ];
     
     const filteringData=(e,type)=>{
-            var myCheckbox = document.getElementsByName("filteringCheck");
+           var myCheckbox = document.getElementsByName("filteringCheck");
+           console.log("check or not  "+e.target.checked)
             Array.prototype.forEach.call(myCheckbox,function(el){
                 el.checked = false;
             });
             e.target.checked = true;
-            props.filterfunction(type)
+            // if(e.target.checked==true && !filterBy.includes(type)){
+            //     filterBy.push(type);
+            // }else{
+            //     if(filterBy.includes(type)){
+            //         filterBy.splice(filterBy.indexOf(type), 1);
+
+            //     }
+
+
+            // }
+          
+             props.filterfunction(type);
     
             
           }

@@ -40,6 +40,41 @@
   height: 650px;
 }
 
+.top-banner .phone-details-section {
+  padding: 0px;
+  position: relative;
+  z-index: 1;
+  margin-top: -300px;
+}
+
+.top-banner .phone-details-section .title {
+  text-align: center;
+  font: normal normal 600 48px/60px Source Serif Pro;
+  letter-spacing: 0px;
+  color: #172026;
+  opacity: 1;
+  line-height: 60px;
+}
+
+.top-banner .phone-details-section .subtitle {
+  text-align: center;
+  font: normal normal normal 16px/24px Muli;
+  letter-spacing: 0px;
+  color: #172026;
+  opacity: 1;
+  line-height: 24px;
+}
+
+.top-banner .phone-details-section .btn-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.top-banner .phone-details-section .btn-section button {
+  width: 221px;
+  height: 40px;
+}
+
 .product-category-card-container {
   width: 200px;
   height: 201px;
@@ -84,10 +119,10 @@
 
 .banner2-section {
   margin-top: 30px;
+  text-align: left;
 }
 
 .banner2-section .text-section .title {
-  text-align: left;
   font: normal normal 600 48px/60px Source Serif Pro;
   letter-spacing: 0px;
   color: #172026;
@@ -96,7 +131,6 @@
 }
 
 .banner2-section .text-section .subtitle {
-  text-align: left;
   font: normal normal 600 20px/25px Muli;
   letter-spacing: 0px;
   color: #172026;
@@ -105,7 +139,6 @@
 }
 
 .banner2-section .text-section .para {
-  text-align: left;
   font: normal normal normal 16px/24px Muli;
   letter-spacing: 0px;
   color: #172026;
@@ -114,7 +147,6 @@
 }
 
 .banner2-section .text-section .btn-section {
-  text-align: left;
   margin-top: 20px;
 }
 
@@ -137,6 +169,75 @@
   height: 350px;
 }
 
+.banner3-section {
+  margin-top: 30px;
+}
+
+.banner3-section .text-section {
+  background: #1B252C 0% 0% no-repeat padding-box;
+  height: 332px;
+  padding: 65px;
+}
+
+.banner3-section .text-section .title {
+  text-align: left;
+  font: normal normal 600 48px/60px Source Serif Pro;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  line-height: 60px;
+  opacity: 1;
+}
+
+.banner3-section .text-section .subtitle {
+  text-align: left;
+  font: normal normal 600 20px/25px Muli;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  line-height: 25px;
+  opacity: 1;
+}
+
+.banner3-section .text-section .para {
+  text-align: left;
+  font: normal normal normal 16px/24px Muli;
+  letter-spacing: 0px;
+  color: #172026;
+  line-height: 24px;
+  opacity: 1;
+}
+
+.banner3-section .text-section .btn-section {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.banner3-section .text-section .btn-section button {
+  text-align: center;
+  font: normal normal bold 14px/16px Muli;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  width: 221px;
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+  height: 40px;
+}
+
+.banner3-section .text-section hr {
+  width: 102px;
+  height: 8px;
+  background: #E26A2C 0% 0% no-repeat padding-box;
+  opacity: 1;
+  margin-top: 20px;
+  float: left;
+}
+
+.banner3-section .img-section img {
+  width: -webkit-fill-available;
+  height: 430px;
+  margin-top: 15px;
+}
+
 .orangebtn {
   background: #D4703D 0% 0% no-repeat padding-box;
   border: 2px solid #D4703D;
@@ -156,6 +257,38 @@
   border: 2px solid #D4703D;
   opacity: 1;
   color: inherit;
+}
+
+@media screen and (max-width: 768px) {
+  .product-category-card-container {
+    margin-top: 10px;
+  }
+  .product-category-card-container {
+    width: 343px;
+    height: 267px;
+  }
+  .banner2-section {
+    text-align: center !important;
+  }
+  .banner2-section hr {
+    text-align: center;
+  }
+  .banner3-section .text-section {
+    width: 343px;
+    height: 210px;
+    margin-top: -40px;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .product-category-card-container {
+    margin-top: 10px;
+  }
+  .product-category-card-container {
+    width: 343px;
+    height: 267px;
+  }
 }
 
 /*# sourceMappingURL=_home.css.map */

@@ -5,7 +5,6 @@ image container css
 .img-menu {
 
     overflow: auto;
-    height: 345px;
 
     ul {
         list-style: none;
@@ -16,17 +15,28 @@ image container css
             text-align: center;
             padding: 5px;
             height: 67px;
-            border: 2px solid;
 
             img {
 
                 width: 36px;
 
             }
+
+         
         }
     }
 }
 
+.active-border{
+    border-bottom:3px solid #E26A2C;
+}
+
+.slide-button{
+
+    button{
+        
+    }
+}
 
 
 .present-img {

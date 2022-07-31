@@ -31,7 +31,8 @@ const Paymentinfo = (props) => {
     const activeSection = () => {
         props.setForm(false);
         props.setDetails(true);
-        props.setNext(true)
+        props.setNext(true);
+        props.setPlacorder(true);
 
     }
 

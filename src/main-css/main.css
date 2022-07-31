@@ -10,6 +10,12 @@
   opacity: 1;
 }
 
+.app-header .nav-button {
+  height: 60px;
+  background: none;
+  border: none;
+}
+
 .app-header .head-log {
   font-size: 30px;
   text-align: left;
@@ -67,6 +73,20 @@
   text-decoration: none;
 }
 
+.app-header .badge {
+  color: white;
+  text-align: center;
+  position: absolute;
+  margin-top: -22px;
+  margin-left: 25px;
+  padding: 3px;
+  border-radius: 50%;
+  height: 14px;
+  width: 14px;
+  line-height: 14px;
+  background: #FDA65D 0% 0% no-repeat padding-box;
+}
+
 .footer-nav .title {
   text-align: left;
   font: normal normal 600 16px/24px Muli;
@@ -91,6 +111,17 @@
   color: #545D63;
   opacity: 1;
   text-decoration: none;
+}
+
+.footer-nav .social-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-nav .social-list li {
+  margin-right: 15px;
 }
 
 .footer-rights .footer-log {
@@ -226,6 +257,41 @@
   height: 650px;
 }
 
+.top-banner .phone-details-section {
+  padding: 0px;
+  position: relative;
+  z-index: 1;
+  margin-top: -300px;
+}
+
+.top-banner .phone-details-section .title {
+  text-align: center;
+  font: normal normal 600 48px/60px Source Serif Pro;
+  letter-spacing: 0px;
+  color: #172026;
+  opacity: 1;
+  line-height: 60px;
+}
+
+.top-banner .phone-details-section .subtitle {
+  text-align: center;
+  font: normal normal normal 16px/24px Muli;
+  letter-spacing: 0px;
+  color: #172026;
+  opacity: 1;
+  line-height: 24px;
+}
+
+.top-banner .phone-details-section .btn-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.top-banner .phone-details-section .btn-section button {
+  width: 221px;
+  height: 40px;
+}
+
 .product-category-card-container {
   width: 200px;
   height: 201px;
@@ -270,10 +336,10 @@
 
 .banner2-section {
   margin-top: 30px;
+  text-align: left;
 }
 
 .banner2-section .text-section .title {
-  text-align: left;
   font: normal normal 600 48px/60px Source Serif Pro;
   letter-spacing: 0px;
   color: #172026;
@@ -282,7 +348,6 @@
 }
 
 .banner2-section .text-section .subtitle {
-  text-align: left;
   font: normal normal 600 20px/25px Muli;
   letter-spacing: 0px;
   color: #172026;
@@ -291,7 +356,6 @@
 }
 
 .banner2-section .text-section .para {
-  text-align: left;
   font: normal normal normal 16px/24px Muli;
   letter-spacing: 0px;
   color: #172026;
@@ -300,7 +364,6 @@
 }
 
 .banner2-section .text-section .btn-section {
-  text-align: left;
   margin-top: 20px;
 }
 
@@ -323,6 +386,75 @@
   height: 350px;
 }
 
+.banner3-section {
+  margin-top: 30px;
+}
+
+.banner3-section .text-section {
+  background: #1B252C 0% 0% no-repeat padding-box;
+  height: 332px;
+  padding: 65px;
+}
+
+.banner3-section .text-section .title {
+  text-align: left;
+  font: normal normal 600 48px/60px Source Serif Pro;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  line-height: 60px;
+  opacity: 1;
+}
+
+.banner3-section .text-section .subtitle {
+  text-align: left;
+  font: normal normal 600 20px/25px Muli;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  line-height: 25px;
+  opacity: 1;
+}
+
+.banner3-section .text-section .para {
+  text-align: left;
+  font: normal normal normal 16px/24px Muli;
+  letter-spacing: 0px;
+  color: #172026;
+  line-height: 24px;
+  opacity: 1;
+}
+
+.banner3-section .text-section .btn-section {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.banner3-section .text-section .btn-section button {
+  text-align: center;
+  font: normal normal bold 14px/16px Muli;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  width: 221px;
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+  height: 40px;
+}
+
+.banner3-section .text-section hr {
+  width: 102px;
+  height: 8px;
+  background: #E26A2C 0% 0% no-repeat padding-box;
+  opacity: 1;
+  margin-top: 20px;
+  float: left;
+}
+
+.banner3-section .img-section img {
+  width: -webkit-fill-available;
+  height: 430px;
+  margin-top: 15px;
+}
+
 .orangebtn {
   background: #D4703D 0% 0% no-repeat padding-box;
   border: 2px solid #D4703D;
@@ -342,6 +474,38 @@
   border: 2px solid #D4703D;
   opacity: 1;
   color: inherit;
+}
+
+@media screen and (max-width: 768px) {
+  .product-category-card-container {
+    margin-top: 10px;
+  }
+  .product-category-card-container {
+    width: 343px;
+    height: 267px;
+  }
+  .banner2-section {
+    text-align: center !important;
+  }
+  .banner2-section hr {
+    text-align: center;
+  }
+  .banner3-section .text-section {
+    width: 343px;
+    height: 210px;
+    margin-top: -40px;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .product-category-card-container {
+    margin-top: 10px;
+  }
+  .product-category-card-container {
+    width: 343px;
+    height: 267px;
+  }
 }
 
 .pagination-container {
@@ -513,6 +677,105 @@
   width: 100%;
 }
 
+.filter-option-section a {
+  text-align: left;
+  text-decoration: underline;
+  font: normal normal 600 16px/20px Muli;
+  letter-spacing: 0px;
+  color: #181C24;
+  line-height: 20px;
+}
+
+.product-banner-section .text-section {
+  background: #1B252C 0% 0% no-repeat padding-box;
+  height: 332px;
+  padding: 65px;
+}
+
+.product-banner-section .text-section .title {
+  text-align: left;
+  font: normal normal 600 48px/60px Source Serif Pro;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  line-height: 60px;
+  opacity: 1;
+}
+
+.product-banner-section .text-section .subtitle {
+  text-align: left;
+  font: normal normal 600 20px/25px Muli;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  line-height: 25px;
+  opacity: 1;
+}
+
+.product-banner-section .text-section .para {
+  text-align: left;
+  font: normal normal normal 16px/24px Muli;
+  letter-spacing: 0px;
+  color: #172026;
+  line-height: 24px;
+  opacity: 1;
+}
+
+.product-banner-section .text-section .btn-section {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.product-banner-section .text-section .btn-section button {
+  text-align: center;
+  font: normal normal bold 14px/16px Muli;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  width: 221px;
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+  height: 40px;
+}
+
+.product-banner-section .text-section hr {
+  width: 102px;
+  height: 8px;
+  background: #E26A2C 0% 0% no-repeat padding-box;
+  opacity: 1;
+  margin-top: 20px;
+  float: left;
+}
+
+.product-banner-section .img-section img {
+  width: -webkit-fill-available;
+  height: 430px;
+}
+
+@media screen and (max-width: 768px) {
+  .result {
+    text-align-last: center !important;
+  }
+  .product-banner-section .text-section {
+    width: 343px;
+    height: 66px;
+    margin-top: -60px;
+    margin-top: -40px;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .result {
+    text-align-last: center !important;
+  }
+  .product-banner-section .product-banner-section .text-section {
+    width: 343px;
+    height: 66px;
+    margin-top: -60px;
+    margin-top: -40px;
+    position: relative;
+  }
+}
+
 /*
 Descriptioin cssss
 
@@ -581,7 +844,6 @@ image container css
 */
 .img-menu {
   overflow: auto;
-  height: 345px;
 }
 
 .img-menu ul {
@@ -594,11 +856,14 @@ image container css
   text-align: center;
   padding: 5px;
   height: 67px;
-  border: 2px solid;
 }
 
 .img-menu ul li img {
   width: 36px;
+}
+
+.active-border {
+  border-bottom: 3px solid #E26A2C;
 }
 
 .present-img {
@@ -902,10 +1167,10 @@ Summary  Details
 
 .product-summary .add-section button {
   /* UI Properties */
-  background: var(--primary-brand) 0% 0% no-repeat padding-box;
-  background: #1F39FF 0% 0% no-repeat padding-box;
-  border-radius: 28px;
-  width: 95%;
+  background: #E26A2C 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 3px 6px #39373729;
+          box-shadow: 0px 3px 6px #39373729;
+  width: 318px;
   height: 40px;
   border: none;
   text-align: center;
@@ -916,7 +1181,6 @@ Summary  Details
 }
 
 .product-summary .add-section div {
-  text-align: center;
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -941,6 +1205,13 @@ Summary  Details
 
 .activeImage img {
   width: -webkit-fill-available;
+}
+
+.product-top {
+  text-align: left;
+  font: normal normal normal 14px/20px Muli;
+  letter-spacing: 0px;
+  line-height: 20px;
 }
 
 /*
@@ -1580,6 +1851,41 @@ Price Summay css ===========================================
   line-height: 24px;
 }
 
+.poster {
+  background: #FF8243 0% 0% no-repeat padding-box;
+  border: 1px solid #D1D3D6;
+  border-radius: 2px;
+  opacity: 1;
+  width: 100%;
+  height: 181px;
+  padding: 18px;
+}
+
+.poster .poster-title {
+  text-align: center;
+  font: normal normal 600 36px/45px Source Serif Pro;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  line-height: 45px;
+}
+
+.poster ul {
+  list-style: none;
+  text-align: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.poster ul li {
+  padding: 5px;
+  margin-right: 11px;
+}
+
 @font-face {
   font-family: Muli;
   src: url("../assets/fonts/muli/muli/Muli-Regular.ttf");
@@ -1719,5 +2025,9 @@ Price Summay css ===========================================
 
 .bottom-margin-10 {
   margin-bottom: 10px;
+}
+
+.padding15 {
+  padding: 15px;
 }
 /*# sourceMappingURL=main.css.map */

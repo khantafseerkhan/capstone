@@ -14,7 +14,7 @@ const Product = (props) => {
             {
                 props.allproducts.map((element) => {
                     return (
-                        <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--6 aem-GridColumn--phone--6 align-to-left " onClick={() => redirect(element)}>
+                        <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--6 aem-GridColumn--phone--6 align-to-left padding15" onClick={() => redirect(element)}>
                             <div className="product-container">
                                 <div className="body">
                                     <img src={element.image}/>    

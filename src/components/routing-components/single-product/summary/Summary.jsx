@@ -96,7 +96,7 @@ const Summary = (props) => {
                                 </div>
 
 
-                                <div className="add-section">
+                                <div className="add-section tab-center phone-center">
 
                                     <button type="button" onClick={() => AddProduct(props.productdata)} aria-label='Add To Cart'>Add To Cart</button>
 

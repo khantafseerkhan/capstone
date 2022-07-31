@@ -51,18 +51,7 @@ const Orderitems = (props) => {
             </div>
 
 
-            <div className="aem-Grid aem-Grid--12 align-to-left ">
-                <div className="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 center-box button-section">
-                <Button value={"Place Order"} classname={['orangebtn']} CallParentEvent={placeOrder} />
-               
-                <div className="note ">
-                By clicking confirm order you agree to our <a href="javascript:void(0)">  Terms and Conditions </a>
-                
-                </div>
-                </div>
-                
-
-            </div>
+           
                     </>
                 )
             }

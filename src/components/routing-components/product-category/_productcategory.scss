@@ -34,7 +34,148 @@ opacity: 1;
 height: 44px;
 width: 100%;
 }
+
+}
+
+
+.filter-option-section{
+    a{
+        text-align: left;
+text-decoration: underline;
+font: normal normal 600 16px/20px Muli;
+letter-spacing: 0px;
+color: #181C24;
+line-height: 20px;
+        img{
+
+        }
+    }
 }
 
 
 
+.product-banner-section {
+
+
+
+    .text-section {
+        background: #1B252C 0% 0% no-repeat padding-box;
+        height: 332px;
+        padding: 65px;
+
+        .title {
+            text-align: left;
+            font: normal normal 600 48px/60px Source Serif Pro;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            line-height: 60px;
+            opacity: 1;
+        }
+
+        .subtitle {
+            text-align: left;
+            font: normal normal 600 20px/25px Muli;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            line-height: 25px;
+            opacity: 1;
+        }
+
+        .para {
+            text-align: left;
+            font: normal normal normal 16px/24px Muli;
+            letter-spacing: 0px;
+            color: #172026;
+            line-height: 24px;
+            opacity: 1;
+        }
+
+        .btn-section {
+            text-align: left;
+            margin-top: 20px;
+
+            button {
+
+                text-align: center;
+                font: normal normal bold 14px/16px Muli;
+                letter-spacing: 0px;
+                color: #FFFFFF;
+                text-transform: uppercase;
+                width: 221px;
+                border: 2px solid #FFFFFF;
+                border-radius: 10px;
+                height: 40px;
+
+
+            }
+
+        }
+
+        hr {
+            width: 102px;
+            height: 8px;
+
+            background: #E26A2C 0% 0% no-repeat padding-box;
+            opacity: 1;
+            margin-top: 20px;
+            float: left;
+        }
+    }
+
+
+    .img-section {
+
+        img {
+            width: -webkit-fill-available;
+            height: 430px;
+        }
+    }
+}
+
+
+
+
+//===========for phone
+@media screen and (max-width: 768px) {
+   
+.result{
+    text-align-last: center !important;
+}
+
+.product-banner-section {
+
+    .text-section{
+        width: 343px;
+        height: 66px;
+        margin-top: -60px;
+            margin-top: -40px;
+            position: relative;
+    }
+}
+
+}
+
+//=============for tablet
+
+@media screen and (max-width: 1200px) {
+    .result{
+        text-align-last: center !important;
+    }
+
+    .product-banner-section {
+
+  
+.product-banner-section {
+
+    .text-section{
+        width: 343px;
+        height: 66px;
+        margin-top: -60px;
+            margin-top: -40px;
+            position: relative;
+    }
+}
+
+}
+    
+}

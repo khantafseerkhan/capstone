@@ -9,7 +9,7 @@ let initialstate = {
   giftCard: 10,
   etax: 50,
   shippingCharge: 0,
-  cartCount: 0,
+  cartCount: localStorage.getItem("cartdata") ? JSON.parse(localStorage.getItem("cartdata")).length :0,
   shippingDetails: [
     {
       shippingInfo: {
@@ -89,7 +89,7 @@ export const updateCartProduct = (state = initialstate, action) => {
         coupon: state.coupon,
         giftCard: state.giftCard,
         etax: state.etax,
-        shippingCharge: state.shippingDetails,
+        shippingCharge: state.shippingCharge,
         cartCount: temparray.length,
         shippingDetails: state.shippingDetails
 

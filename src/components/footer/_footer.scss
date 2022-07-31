@@ -28,6 +28,14 @@
             }
         }
     }
+
+    .social-list{
+        list-style: none;
+        display: flex;
+        li{
+            margin-right: 15px;
+        }
+    }
 }
 
 

@@ -6,6 +6,12 @@
   opacity: 1;
 }
 
+.app-header .nav-button {
+  height: 60px;
+  background: none;
+  border: none;
+}
+
 .app-header .head-log {
   font-size: 30px;
   text-align: left;
@@ -52,6 +58,20 @@
   opacity: 1;
   padding: 10px;
   text-decoration: none;
+}
+
+.app-header .badge {
+  color: white;
+  text-align: center;
+  position: absolute;
+  margin-top: -22px;
+  margin-left: 25px;
+  padding: 3px;
+  border-radius: 50%;
+  height: 14px;
+  width: 14px;
+  line-height: 14px;
+  background: #FDA65D 0% 0% no-repeat padding-box;
 }
 
 /*# sourceMappingURL=_header.css.map */

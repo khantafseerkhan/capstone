@@ -53,7 +53,7 @@ const Footer = (props) => {
         <>
             {/* footer nav section */}
             <div className="aem-Grid aem-Grid--12 border-inside-top-1">
-              
+
                 <div className="aem-GridColumn aem-GridColumn--default--10 aem-GridColumn--tablet--10 aem-GridColumn--phone--12  unset-float center-box">
                     <div className="aem-Grid aem-Grid--12">
 
@@ -68,7 +68,24 @@ const Footer = (props) => {
                                                     {
                                                         element.type.list.map((item) => {
                                                             return (
-                                                                <li><a href="javascript:void(0)" role='button' aria-label='{item}'>{item}</a></li>
+                                                                <>
+                                                                    <li><a href="javascript:void(0)" role='button' aria-label='{item}'>{item}</a></li>
+
+                                                                    {element.type.title == "Follow Us!" &&
+                                                                        (
+                                                                            <li>
+                                                                                <ul className="social-list">
+                                                                                    <li><a href="javascript:void(0)" role='button' aria-label='Instagram'  ><img src={require("../../assets/img/instagram.png")} alt="Instagram" /></a></li>
+                                                                                    <li><a href="javascript:void(0)" role='button' aria-label='Facebook'  ><img src={require("../../assets/img/facebook.png")} alt="Facebook" /></a></li>
+
+                                                                                    <li><a href="javascript:void(0)" role='button' aria-label='Twiter'><img src={require("../../assets/img/twitter.png")} alt="Twitter" /></a></li>
+
+                                                                                </ul>
+
+                                                                            </li>
+                                                                        )
+                                                                    }
+                                                                </>
                                                             )
                                                         })
                                                     }
@@ -87,7 +104,7 @@ const Footer = (props) => {
                     </div>
                 </div>
 
-               
+
 
             </div>
 
@@ -96,7 +113,7 @@ const Footer = (props) => {
 
             {/* copy right section */}
             <div className="aem-Grid aem-Grid--12 footer-rights border-inside-top-1">
-              
+
                 <div className="aem-GridColumn aem-GridColumn--default--10 aem-GridColumn--tablet--10 aem-GridColumn--phone--12  unset-float center-box">
                     <div className="aem-Grid aem-Grid--12 revertDiv">
 
@@ -128,7 +145,7 @@ const Footer = (props) => {
                     </div>
                 </div>
 
-              
+
 
             </div>
         </>

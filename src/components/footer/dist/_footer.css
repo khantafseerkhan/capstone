@@ -24,6 +24,15 @@
   text-decoration: none;
 }
 
+.footer-nav .social-list {
+  list-style: none;
+  display: flex;
+}
+
+.footer-nav .social-list li {
+  margin-right: 15px;
+}
+
 .footer-rights .footer-log {
   text-align: left;
   font-size: 18px;
