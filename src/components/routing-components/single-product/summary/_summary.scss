@@ -35,10 +35,55 @@ Summary  Details
         }
 
         .rating-section {
+
+
+
             font: normal normal 600 20px/30px Muli;
             letter-spacing: 0px;
             color: #172026;
             padding: 5px;
+            display: flex;
+
+            span {
+
+                display: block;
+                cursor: pointer;
+
+                width: 25px;
+
+
+
+
+            }
+
+            label {
+                text-decoration: underline;
+                font: normal normal 600 14px/24px Muli;
+         letter-spacing: 0px;
+                color: #172026;
+                margin-top: 3px;
+                line-height: 24px;
+            }
+
+            span::before {
+                content: '★';
+                position: relative;
+                display: block;
+                font-size: 16px;
+                color: black;
+            }
+
+            span:after {
+                content: '★';
+                position: relative;
+                margin-top: -30px;
+                display: block;
+                font-size: 16px;
+                color: deeppink;
+                top: 0;
+                opacity: 1;
+                transition: .6s;
+            }
         }
 
         .summary-section {
@@ -144,9 +189,10 @@ Summary  Details
                 color: #172026;
             }
 
-            .quantiy-input-section{
+            .quantiy-input-section {
 
                 text-align: left;
+
                 input {
                     width: 34px;
                     border: 2px solid var(--gray-m1);
@@ -159,21 +205,21 @@ Summary  Details
                     margin-right: 9px;
                     text-align: center;
                 }
-    
+
                 button {
                     border-radius: 50%;
                     background: #EAEBEB 0% 0% no-repeat padding-box;
                     border: 2px solid #B5B8BA;
-    
+
                     text-align: center;
                     font: normal normal 600 16px/20px Muli;
                     letter-spacing: 0.32px;
                     color: #545D63;
-    
+
                     width: 32px;
                     height: 32px;
-    
-    
+
+
                 }
             }
         }
@@ -242,21 +288,21 @@ Summary  Details
 
 
 
-    //===========for phone
+//===========for phone
 @media screen and (max-width: 768px) {
-   
-    .quantiy-input-section{
+
+    .quantiy-input-section {
 
         text-align: center !important;
     }
-    }
-    
-    //=============for tablet
-    
-    @media screen and (max-width: 1200px) {   
-       
-    .quantiy-input-section{
+}
+
+//=============for tablet
+
+@media screen and (max-width: 1200px) {
+
+    .quantiy-input-section {
 
         text-align: center !important;
-    } 
     }
+}

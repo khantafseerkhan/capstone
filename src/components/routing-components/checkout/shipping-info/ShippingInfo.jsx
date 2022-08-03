@@ -78,7 +78,7 @@ const ShippingInfo = (props) => {
 
 
                             <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--6 aem-GridColumn--phone--12">
-                                <Input label={"Phone Number"} name={"phone"} id={"phone"} value={phone} placeholder={"22 22222222"} setValue={setPhone} />
+                                <Input  label={"Phone Number"} name={"phone"} id={"phone"} value={phone} placeholder={"22 22222222"} setValue={setPhone} />
                             </div>
 
 

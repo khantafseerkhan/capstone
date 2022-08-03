@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../../../redux-management/actions/actions";
@@ -6,7 +6,11 @@ import { addToCart } from "../../../../redux-management/actions/actions";
 
 const Summary = (props) => {
     //productdata
+   
+    
 
+
+  //  props.productdata.rating;
     const dispatch = useDispatch();
     const [quantity, setQauntity] = useState(1);
 
@@ -49,8 +53,18 @@ const Summary = (props) => {
                             <div className="productdetails-section border-inside-bottom-3">
                                 <div className="title-section">{props.productdata.title}</div>
                                 <div className="price-section">&#36; {props.productdata.price}</div>
-                                {/* <div className="rating-section">{props.productdata.rating.count}</div> */}
-                                <div className="summary-section">{props.productdata.description}</div>
+                                <div className="rating-section">
+                                    <span ></span>
+                                    <span></span>
+                                    <span ></span>
+                                    <span></span>
+                                    <span ></span>
+
+                                    <label>{232
+}</label>
+
+                                    </div>
+                                <div className="summary-section"> {props.productdata.description}</div>
 
                             </div>
 

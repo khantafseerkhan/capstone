@@ -42,6 +42,8 @@ const Filter = (props) => {
    
             if(id!=""){
                 document.getElementById(id).checked=true;
+                document.getElementById(id+"_mob").checked=true;
+
             }
 
 
@@ -239,7 +241,7 @@ const Filter = (props) => {
                                                     element.list.map(item => {
                                                         return (
                                                             <li>
-                                                                <input type="checkbox" name={item.key+"_mob"} onChange={(e) => filteringData(e, item.key)} id={item.key+"_mob"} checked={id==item.key}/> <label for={item.key+"_mob"}>{item.label}</label>
+                                                                <input type="checkbox" name={item.key+"_mob"} onChange={(e) => filteringData(e, item.key)} id={item.key+"_mob"} /> <label for={item.key+"_mob"}>{item.label}</label>
                                                             </li>
                                                         )
                                                     })

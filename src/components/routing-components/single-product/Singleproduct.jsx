@@ -25,7 +25,8 @@ const SingleProduct = () => {
             //temp.push(json)
             setSingleProductdata(json);
 
-        });
+        },[]);
+
 
 
 
