@@ -24,7 +24,6 @@ const Checkout = (props) => {
 
     let navigate=useNavigate();
     let cartData = useSelector(state => state.updateCartProduct.cartProduct);
-    console.log("cartData   " + cartData)
 
     const placeOrder=()=>{
         navigate("/orderSuccess")
@@ -49,30 +48,25 @@ const Checkout = (props) => {
 
 
                 <div className="aem-Grid aem-Grid--12 align-to-left">
-                    <div className="aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+                    <div className="aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 right-padding30">
 
-                        {/* const [sinfoForm,setSinfoForm]=useState(true);
-const [sinfoDetails,setSingoDetails]=useState(true);
-const [smethodForm,setSmethodForm]=useState(true);
-const [smethodDetails,setSmethodDetails]=useState(true);
-const [spaymentForm,setSpaymentForm]=useState(true);
-const [spaymentDetails,setSpaymentDetails]=useState(true); */}
                         <ShippingInfo form={sinfoForm} details={sinfoDetails} setForm={setSinfoForm} setDetails={setSingoDetails} setNext={setSmethodForm} />
-                        <ShippingMethod form={smethodForm} details={smethodDetails} setForm={setSmethodForm} setDetails={setSmethodDetails} setNext={setSpaymentForm} />
-                        <Paymentinfo form={spaymentForm} details={spaymentDetails} setForm={setSpaymentForm} setDetails={setSpaymentDetails} setNext={setOrderchart} setPlacorder={setPlacorder}      />                  <Orderitems orderChart={orderchart} />
+                         <ShippingMethod form={smethodForm} details={smethodDetails} setForm={setSmethodForm} setDetails={setSmethodDetails} setNext={setSpaymentForm} />
+                        <Paymentinfo form={spaymentForm} details={spaymentDetails} setForm={setSpaymentForm} setDetails={setSpaymentDetails} setNext={setOrderchart} setPlacorder={setPlacorder}      />    
+                           <Orderitems orderChart={orderchart} /> 
                     </div>
 
-                    <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+                  <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
                         <div className="aem-Grid aem-Grid--12 align-to-left">
                             <SignInOption />
                             <CheckoutPrice />
 
                         </div>
-                    </div>
+                    </div> 
 
 {
     placorder==true && (
-        <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+        <div className="aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
         <div className="aem-Grid aem-Grid--12 align-to-left ">
             <div className="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 center-box button-section">
                 <Button value={"Place Order"} classname={['orangebtn']} CallParentEvent={placeOrder} />

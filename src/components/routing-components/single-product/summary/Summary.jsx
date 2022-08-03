@@ -25,7 +25,6 @@ const Summary = (props) => {
     }
     const AddProduct = (inputdata) => {
         // const productData = useSelector(state => state.updateCartProduct);
-        console.log("AddProduct    ==== " + JSON.stringify(inputdata))
         let obj = {
             id: inputdata.id,
             price: inputdata.price,
@@ -55,43 +54,45 @@ const Summary = (props) => {
 
                             </div>
 
-                            <div className="selection-section">
-                                <div className="color-section">
+                            <div className="selection-section ">
+                                {/* <div className="color-section">
                                     <div className="title-section">Color</div>
                                     <ul>
-                                        <li><button type="button"  aria-label='color' style={{backgroundColor:"black"}}></button></li>
-                                        <li><button type="button"  aria-label='color' style={{backgroundColor:"blue"}}></button></li>
-                                        <li><button type="button"  aria-label='color' style={{backgroundColor:"green"}}></button></li>
-                                        <li><button type="button"  aria-label='color' style={{backgroundColor:"red"}}></button></li>
+                                        <li><button type="button" aria-label='color' style={{ backgroundColor: "black" }}></button></li>
+                                        <li><button type="button" aria-label='color' style={{ backgroundColor: "blue" }}></button></li>
+                                        <li><button type="button" aria-label='color' style={{ backgroundColor: "green" }}></button></li>
+                                        <li><button type="button" aria-label='color' style={{ backgroundColor: "red" }}></button></li>
 
                                     </ul>
                                 </div>
 
-                                <div className="size-section">
+                                <div className="size-section ">
                                     <div className="title-section">Size</div>
 
                                     <ul>
-                                        <li><button  type="button" aria-label='XS Size'>XS</button></li>
-                                        <li><button   type="button"  aria-label='S Size'>S</button></li>
-                                        <li><button  type="button"  aria-label='M Size'>M</button></li>
-                                        <li><button  type="button"  aria-label='L Size'>L</button></li>
-                                        <li><button   type="button"  aria-label='XL Size'>XL</button></li>
+                                        <li><button type="button" aria-label='XS Size'>XS</button></li>
+                                        <li><button type="button" aria-label='S Size'>S</button></li>
+                                        <li><button type="button" aria-label='M Size'>M</button></li>
+                                        <li><button type="button" aria-label='L Size'>L</button></li>
+                                        <li><button type="button" aria-label='XL Size'>XL</button></li>
 
 
                                     </ul>
-                                </div>
+                                </div> */}
 
                                 <div className="quntity-section">
                                     {/* <div className="title-section">Quantity</div> */}
                                     <label className="title-section" for="quantityvalue">Quantity</label>
                                     <br /><br />
 
-                                    <button   type="button" aria-label='Quantity Decreament' onClick={() => decQuantity()}>-</button>
-                                   
-                                  
-                                    <input type="text" id="quantityvalue" value={quantity} name="quantityvalue" />
-                                    <button onClick={() => incQuantity()}   type="button" aria-label='Quantity Increament'>+</button>
+                                    <div className="quantiy-input-section">
+                                        <button type="button" aria-label='Quantity Decreament' onClick={() => decQuantity()}>-</button>
 
+
+                                        <input type="text" id="quantityvalue" value={quantity} name="quantityvalue" />
+                                        <button onClick={() => incQuantity()} type="button" aria-label='Quantity Increament'>+</button>
+
+                                    </div>
 
                                 </div>
 
@@ -101,7 +102,7 @@ const Summary = (props) => {
                                     <button type="button" onClick={() => AddProduct(props.productdata)} aria-label='Add To Cart'>Add To Cart</button>
 
                                     <div>
-                                        <a href="javascript:void(0)" role='button' aria-label='Save for Later'><img alt="save for later" src={require("../../../../assets/img/heart.png")}   /><span>Save</span></a>
+                                        <a href="javascript:void(0)" role='button' aria-label='Save for Later'><img alt="save for later" src={require("../../../../assets/img/heart.png")} /><span>Save</span></a>
                                         <a href="javascript:void(0)" role='button' aria-label='Share'><img alt="Share" src={require("../../../../assets/img/share-2.png")} /><span>Share</span></a>
                                     </div>
 

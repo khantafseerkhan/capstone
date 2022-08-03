@@ -34,7 +34,7 @@ function App() {
 
                 {/* Container section */}
 
-                <div className="aem-GridColumn aem-GridColumn--default--12">
+                <div className="aem-GridColumn aem-GridColumn--default--12 bottom-padding10">
                   <Routing />
                 </div>
               </div>

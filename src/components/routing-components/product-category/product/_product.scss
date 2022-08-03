@@ -1,10 +1,13 @@
 .product-container{
-
-
+    background-color: white;
+    margin:15px;
+    width: 219px;
     .body{
+        text-align: center;
         img{
-            width: -webkit-fill-available;
-            height: 300px;
+            width: 219px;
+            height: 273px;
+            mix-blend-mode: multiply;
         }
     }
     .footer{
@@ -16,7 +19,11 @@
             letter-spacing: 0px;
             color: #172026;
             line-height: 20px;
+            content-visibility: auto;
             opacity: 1;
+            height: 23px;
+            margin-top: 7px;
+        
         }
         .price{
             text-align: left;
@@ -29,6 +36,8 @@
         }
 
         .favourite{
+            margin-top: 7px;
+            text-align: left;
            img{
 
            }
@@ -36,4 +45,29 @@
     }
 
     
+}
+
+
+
+
+
+//===========for phone
+@media screen and (max-width: 768px) {
+
+    
+.product-container{
+    .body{
+    img{
+        width: 164px;
+        height: 196px;
+    }
+
+}
+}
+}
+
+//=============for tablet
+
+@media screen and (max-width: 1200px) {
+   
 }

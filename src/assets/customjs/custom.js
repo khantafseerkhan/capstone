@@ -5,7 +5,6 @@ export function hasClass(element, className) {
 
 export function GetReverseSort(prop) {  
 
-    console.log("into getReverse")
  
     return function(a, b) {   
 

@@ -10,7 +10,7 @@ let initialstate = {
   etax: 50,
   shippingCharge: 0,
   cartCount: localStorage.getItem("cartdata") ? JSON.parse(localStorage.getItem("cartdata")).length :0,
-  shippingDetails: [
+  shippingDetails:localStorage.getItem("shippingDetails") ? JSON.parse(localStorage.getItem("shippingDetails")) :[
     {
       shippingInfo: {
         email: "",
@@ -201,6 +201,7 @@ export const updateCartProduct = (state = initialstate, action) => {
   } else if (action.type == "insetshippingInfo") {
     let temp = state.shippingDetails;
     temp[0].shippingInfo = action.data;
+    try{localStorage.setItem("shippingDetails",JSON.stringify(temp))}catch(e){}
     return {
 
 
@@ -221,6 +222,10 @@ export const updateCartProduct = (state = initialstate, action) => {
   }else if (action.type == "insertshippingMethod") {
     let temp = state.shippingDetails;
     temp[0].shippingMethod = action.data;
+    console.log("taf   "+action.data)
+
+    try{localStorage.setItem("shippingDetails",JSON.stringify(temp))}catch(e){}
+
     // email: state.value,
     // phone: state.allproductdata,
     // country: temparray,
@@ -251,6 +256,9 @@ export const updateCartProduct = (state = initialstate, action) => {
   }else if (action.type == "insertpaymentInfo") {
     let temp = state.shippingDetails;
     temp[0].paymentInfo = action.data;
+
+    try{localStorage.setItem("shippingDetails",JSON.stringify(temp))}catch(e){}
+
     return {
 
 

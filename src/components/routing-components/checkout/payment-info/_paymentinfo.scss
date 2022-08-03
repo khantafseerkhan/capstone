@@ -35,7 +35,9 @@ opacity: 1;
 
 
 
-.details-section {
+.saved-details-section {
+    margin:13px;
+
     height: 176px;
     /* UI Properties */
     border: 1px solid #D1D3D6;
@@ -53,7 +55,6 @@ width: max-content;
 
 
     }
-    padding: 20px;
     .left-info {
         .content {
             text-align: left;
@@ -62,6 +63,7 @@ width: max-content;
             color: #535965;
             line-height: 24px;
             padding:4px;
+            overflow-wrap: break-word;
         }
     }
 
@@ -72,7 +74,27 @@ width: max-content;
             letter-spacing: 0px;
             color: #535965;
                         line-height: 24px;
+                        overflow-wrap: break-word;
 
         }
     }
 }
+
+
+
+//===========for phone
+@media screen and (max-width: 768px) {
+
+    
+    .saved-details-section{
+        height: auto;
+    }
+    }
+    
+    //=============for tablet
+    
+    @media screen and (max-width: 1200px) {
+        .saved-details-section{
+            height: auto;
+        }
+    }

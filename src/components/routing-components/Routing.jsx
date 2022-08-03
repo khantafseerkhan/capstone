@@ -21,15 +21,15 @@ export default class Routing extends React.Component{
 
       <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/productcategory" element={<ProductCategory />} />
-      <Route path="/productcategory/:id" element={<ProductCategory />} />
+      <Route path="productcategory" element={<ProductCategory />} />
+      <Route path="productcategory/:id" element={<ProductCategory />} />
 
       {/* <Route path="singleproduct" element={<Singleproduct />} /> */}
 
-      <Route path="/singleproduct/:id" element={<SingleProduct /> } />
-      <Route path="/shoppingcart" element={<ShoppingCart /> } />
-      <Route path="/checkout" element={<Checkout /> } />
-      <Route path="/ordersuccess" element={<Ordersuccess /> } />
+      <Route path="singleproduct/:id" element={<SingleProduct /> } />
+      <Route path="shoppingcart" element={<ShoppingCart /> } />
+      <Route path="checkout" element={<Checkout /> } />
+      <Route path="ordersuccess" element={<Ordersuccess /> } />
 
       
 

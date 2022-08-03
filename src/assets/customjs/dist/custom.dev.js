@@ -14,7 +14,6 @@ function hasClass(element, className) {
 }
 
 function GetReverseSort(prop) {
-  console.log("into getReverse");
   return function (a, b) {
     if (a[prop] < b[prop]) {
       return 1;

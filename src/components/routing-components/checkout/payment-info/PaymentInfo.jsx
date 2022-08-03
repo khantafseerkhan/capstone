@@ -7,10 +7,12 @@ import { insertpaymentInfo } from "../../../../redux-management/actions/actions"
 
 const Paymentinfo = (props) => {
     const dispatch = useDispatch();
-    const [cardholdername, setCardholdername] = useState("");
-    const [cardnumber, setCardnumber] = useState("");
-    const [expiry, setExpiry] = useState("");
-    const [cvv, setCvv] = useState("");
+
+    let paymentInfo = useSelector(state => state.updateCartProduct.shippingDetails[0]);
+    const [cardholdername, setCardholdername] = useState(paymentInfo.paymentInfo.cardholdername);
+    const [cardnumber, setCardnumber] = useState(paymentInfo.paymentInfo.cardnumber);useState(paymentInfo.paymentInfo.cardnumber);
+    const [expiry, setExpiry] =useState(paymentInfo.paymentInfo.expiry);
+    const [cvv, setCvv] = useState(paymentInfo.paymentInfo.cvv);
 
     const addpaymentInfo = () => {
         dispatch(insertpaymentInfo(
@@ -129,11 +131,23 @@ const Paymentinfo = (props) => {
             {
                 props.details == true && (
 
-                    <div className="aem-Grid aem-Grid--12 align-to-left details-section bottom-margin-10">
-                        <div className="subhead">
-                            Payment Information
+                    <div className="aem-Grid aem-Grid--12 align-to-left saved-details-section bottom-margin-10">
+
+                        <div className="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 padding10 ">
+
+                            <div className="subhead">
+                                Payment Information
+
+
+                            </div>
+
+                            <div className="edit-details">
+                                <a href="javascript:void(0)" role='button' aria-label='Edit Payment information'>
+                                <img src={require("../../../../assets/img/edit-2.png")} alt="edit"/><span className="tab-hide phone-hide">Edit</span>
+                                </a>
+                            </div>
                         </div>
-                        <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--6 aem-GridColumn--phone--12 left-info">
+                        <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--6 aem-GridColumn--phone--12 left-info left-padding10">
                             <div className="content">{"Credit Card"}</div>
                             <div className="content">Visa ending in {cardnumber.substr(cardnumber.length - 4)}</div>
 

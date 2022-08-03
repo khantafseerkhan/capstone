@@ -38,7 +38,6 @@ const Addedproduct=()=>{
         let tempcart=selectedProducts;
 
         tempcart.splice(index,1)
-        console.log("here is lenght  "+tempcart.length)
         dispatch(removeProduct(index));
 
      //   setSelectedProducts(tempcart);
@@ -66,7 +65,7 @@ const Addedproduct=()=>{
 
 
                     <div className="aem-Grid aem-Grid--12">
-                        <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn aem-GridColumn--tablet--10 aem-GridColumn aem-GridColumn--phone--10 details padding14">
+                        <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn aem-GridColumn--tablet--10 aem-GridColumn aem-GridColumn--phone--10 details padding18">
                             <div className="title-section">
                             <label for={element.id}>{element.title} </label>
 
@@ -79,7 +78,7 @@ const Addedproduct=()=>{
 
 
                         </div>
-                        <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn aem-GridColumn--tablet--10 aem-GridColumn aem-GridColumn--phone--10 quantitycontainer padding14">
+                        <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn aem-GridColumn--tablet--10 aem-GridColumn aem-GridColumn--phone--10 quantitycontainer ">
                         <div className="quntity-section">
                         <label for={element.id}>&nbsp; </label>
                                    
@@ -101,7 +100,7 @@ const Addedproduct=()=>{
                 <div className="aem-GridColumn aem-GridColumn--default--2  aem-GridColumn aem-GridColumn--tablet--1 aem-GridColumn aem-GridColumn--phone--1 edit-section">
                    <ul className="tab-hide phone-hide">
                     <li>
-                        <a role='button' aria-label='Edit Item' href="javascript:void(0)"><img src={require("../../../../assets/img/edit-2.png")} alt="Edit Item"/> <span>Edit item</span></a>
+                        <a role='button' aria-label='Edit Item' href="javascript:void(0)"><img src={require("../../../../assets/img/edit-2-1.png")} alt="Edit Item"/> <span>Edit item</span></a>
                     </li>
 
                     <li>

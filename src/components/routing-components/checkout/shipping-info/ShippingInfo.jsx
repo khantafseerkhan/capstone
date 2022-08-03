@@ -24,7 +24,6 @@ const ShippingInfo = (props) => {
     const dispatch = useDispatch();
     const [test, setTest] = useState(0);
     const addShippingInfo = () => {
-
         dispatch(insetshippingInfo(
             {
                 email: email,
@@ -46,7 +45,7 @@ const ShippingInfo = (props) => {
 
     useEffect(() => {
         //addShippingInfo();
-        console.log("selectedProducts   " + email)
+
     }, [])
 
     const activeSection = () => {
@@ -92,7 +91,7 @@ const ShippingInfo = (props) => {
 
                                 <div className="aem-Grid aem-Grid--12">
                                     <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--6 aem-GridColumn--phone--12">
-                                        <Select defaultOption={{ label: "Country", value: "" }} options={[]} id={"country"} label={"Country"} setValue={setCountry} />
+                                        <Select defaultOption={{ label: "Country", value: "" }} options={[{ value: "USA", label: "USA" }]} id={"country"} label={"Country"} setValue={setCountry} />
 
                                     </div>
                                 </div>
@@ -130,7 +129,7 @@ const ShippingInfo = (props) => {
 
                                 <div className="aem-Grid aem-Grid--12">
                                     <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--6 aem-GridColumn--phone--6">
-                                        <Select defaultOption={{ label: "State", value: "" }} options={[]} id={"state"} label={"State"} setValue={setState1} />
+                                        <Select defaultOption={{ label: "State", value: "" }} options={[{ label: "Washington, D.C.", value: "Washington, D.C." }]} id={"state"} label={"State"} setValue={setState1} />
 
                                     </div>
 
@@ -162,17 +161,25 @@ const ShippingInfo = (props) => {
 
                 {
                     props.details == true && (
-                        <div className="aem-Grid aem-Grid--12 align-to-left details-section">
-                            <div className="subhead">
-                                Shopping Information
+                        <div className="aem-Grid aem-Grid--12 align-to-left saved-details-section">
+                            <div className="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 padding10">
+
+                                <div className="subhead">
+                                    Shopping Information
+                                </div>
+                                <div className="edit-details">
+                                    <a href="javascript:void(0)" role='button' aria-label='Edit Payment information'>
+                                    <img src={require("../../../../assets/img/edit-2.png")} alt="edit" /><span className="tab-hide phone-hide">Edit</span>
+                                    </a>
+                                </div>
                             </div>
-                            <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--6 aem-GridColumn--phone--12 left-info">
+                            <div className="aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--tablet--6 aem-GridColumn--phone--12 left-info left-padding10">
                                 <div className="content">{email}</div>
                                 <div className="content">{phone}</div>
 
                             </div>
 
-                            <div className="aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--tablet--6 aem-GridColumn--phone--12 right-info">
+                            <div className="aem-GridColumn aem-GridColumn--default--7 aem-GridColumn--tablet--6 aem-GridColumn--phone--12 right-info left-padding10">
                                 <div className="content">{fname} {lname}</div>
                                 <div className="content">{address1} </div>
                                 <div className="content">{address2} </div>

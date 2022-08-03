@@ -64,7 +64,6 @@ image container css
 */
 .img-menu {
   overflow: auto;
-  height: 345px;
 }
 
 .img-menu ul {
@@ -77,11 +76,14 @@ image container css
   text-align: center;
   padding: 5px;
   height: 67px;
-  border: 2px solid;
 }
 
 .img-menu ul li img {
   width: 36px;
+}
+
+.active-border {
+  border-bottom: 3px solid #E26A2C;
 }
 
 .present-img {
@@ -96,6 +98,10 @@ image container css
 
 .mySlides {
   display: none;
+}
+
+.mySlides img {
+  width: 343px;
 }
 
 img {
@@ -204,23 +210,21 @@ Summary  Details
 */
 .product-summary {
   padding-left: 25px;
+  text-align: left;
 }
 
 .product-summary .flow {
-  text-align: left;
   font: normal normal normal 14px/20px Muli;
   letter-spacing: 0px;
 }
 
 .product-summary .productdetails-section {
-  text-align: left;
   font: normal normal 600 36px/45px Source Serif Pro;
   letter-spacing: 0px;
   color: #172026;
 }
 
 .product-summary .productdetails-section .title-section {
-  text-align: left;
   font: normal normal 600 36px/45px Source Serif Pro;
   letter-spacing: 0px;
   color: #172026;
@@ -229,7 +233,6 @@ Summary  Details
 }
 
 .product-summary .productdetails-section .price-section {
-  text-align: left;
   font: normal normal 600 20px/30px Muli;
   letter-spacing: 0px;
   color: #172026;
@@ -238,7 +241,6 @@ Summary  Details
 }
 
 .product-summary .productdetails-section .rating-section {
-  text-align: left;
   font: normal normal 600 20px/30px Muli;
   letter-spacing: 0px;
   color: #172026;
@@ -246,7 +248,6 @@ Summary  Details
 }
 
 .product-summary .productdetails-section .summary-section {
-  text-align: left;
   font: normal normal normal 16px/24px Muli;
   letter-spacing: 0px;
   padding: 5px;
@@ -337,7 +338,11 @@ Summary  Details
   color: #172026;
 }
 
-.product-summary .selection-section .quntity-section input {
+.product-summary .selection-section .quntity-section .quantiy-input-section {
+  text-align: left;
+}
+
+.product-summary .selection-section .quntity-section .quantiy-input-section input {
   width: 34px;
   border: 2px solid var(--gray-m1);
   background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -350,7 +355,7 @@ Summary  Details
   text-align: center;
 }
 
-.product-summary .selection-section .quntity-section button {
+.product-summary .selection-section .quntity-section .quantiy-input-section button {
   border-radius: 50%;
   background: #EAEBEB 0% 0% no-repeat padding-box;
   border: 2px solid #B5B8BA;
@@ -408,11 +413,25 @@ Summary  Details
   width: -webkit-fill-available;
 }
 
+@media screen and (max-width: 768px) {
+  .quantiy-input-section {
+    text-align: center !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .quantiy-input-section {
+    text-align: center !important;
+  }
+}
+
 .product-top {
   text-align: left;
-  font: normal normal normal 14px/20px Muli;
+  font: normal normal normal 16px/24px Muli;
   letter-spacing: 0px;
   line-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /*# sourceMappingURL=_singleproduct.css.map */

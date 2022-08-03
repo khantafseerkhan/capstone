@@ -14,7 +14,7 @@ var initialstate = {
   etax: 50,
   shippingCharge: 0,
   cartCount: localStorage.getItem("cartdata") ? JSON.parse(localStorage.getItem("cartdata")).length : 0,
-  shippingDetails: [{
+  shippingDetails: localStorage.getItem("shippingDetails") ? JSON.parse(localStorage.getItem("shippingDetails")) : [{
     shippingInfo: {
       email: "",
       phone: "",
@@ -196,6 +196,11 @@ var updateCartProduct = function updateCartProduct() {
   } else if (action.type == "insetshippingInfo") {
     var temp = state.shippingDetails;
     temp[0].shippingInfo = action.data;
+
+    try {
+      localStorage.setItem("shippingDetails", JSON.stringify(temp));
+    } catch (e) {}
+
     return {
       value: state.value,
       allproductdata: state.allproductdata,
@@ -210,7 +215,12 @@ var updateCartProduct = function updateCartProduct() {
     };
   } else if (action.type == "insertshippingMethod") {
     var _temp = state.shippingDetails;
-    _temp[0].shippingMethod = action.data; // email: state.value,
+    _temp[0].shippingMethod = action.data;
+    console.log("taf   " + action.data);
+
+    try {
+      localStorage.setItem("shippingDetails", JSON.stringify(_temp));
+    } catch (e) {} // email: state.value,
     // phone: state.allproductdata,
     // country: temparray,
     // fname: calPriceSummary(temparray),
@@ -220,6 +230,7 @@ var updateCartProduct = function updateCartProduct() {
     // city: state.shippingCharge,
     // state: temparray.length,
     // zip:state.shippingDetails
+
 
     return {
       value: state.value,
@@ -236,6 +247,11 @@ var updateCartProduct = function updateCartProduct() {
   } else if (action.type == "insertpaymentInfo") {
     var _temp2 = state.shippingDetails;
     _temp2[0].paymentInfo = action.data;
+
+    try {
+      localStorage.setItem("shippingDetails", JSON.stringify(_temp2));
+    } catch (e) {}
+
     return {
       value: state.value,
       allproductdata: state.allproductdata,

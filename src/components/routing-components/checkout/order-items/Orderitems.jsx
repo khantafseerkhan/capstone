@@ -6,7 +6,6 @@ import { useNavigate } from "react-router-dom";
 const Orderitems = (props) => {
     let navigate=useNavigate();
     let cartData = useSelector(state => state.updateCartProduct.cartProduct);
-    console.log("cartData   " + cartData)
 
     const placeOrder=()=>{
         navigate("/orderSuccess")

@@ -2,9 +2,11 @@
 @import "./presentation-images/_presentationimages.scss";
 @import "./summary/_summary.scss";
 
-.product-top{
+.product-top {
     text-align: left;
-font: normal normal normal 14px/20px Muli;
-letter-spacing: 0px;
-line-height: 20px;
+    font: normal normal normal 16px/24px Muli;
+    letter-spacing: 0px;
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }

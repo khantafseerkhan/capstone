@@ -40,6 +40,17 @@ Descriptioin cssss
     
 
     }
+
+    hr{
+            width: 102px;
+            height: 8px;
+
+            background: #E26A2C 0% 0% no-repeat padding-box;
+            opacity: 1;
+            margin-top: 20px;
+            float: left;
+        }
+    
 }
 
 
@@ -72,3 +83,31 @@ Descriptioin cssss
 
 
 }
+
+
+
+
+
+
+
+    //===========for phone
+    @media screen and (max-width: 768px) {
+   
+        .product-description-section {
+            hr{
+                text-align: center;
+            }   
+        }
+        }
+        
+        //=============for tablet
+        
+        @media screen and (max-width: 1200px) {   
+           
+            .product-description-section {
+                hr{
+                    float: inherit;
+                    text-align: center;
+                }   
+            }
+        }

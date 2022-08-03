@@ -41,10 +41,28 @@
 }
 
 .top-banner .phone-details-section {
-  padding: 0px;
+  padding: 16px;
   position: relative;
   z-index: 1;
-  margin-top: -300px;
+  margin-top: 289px;
+  background: transparent linear-gradient(181deg, #F1F1F100 0%, #F0F0F0 100%) 0% 0% no-repeat padding-box;
+  height: 332px;
+}
+
+.top-banner .phone-details-section .dot {
+  cursor: pointer;
+  height: 6px;
+  width: 6px;
+  margin: 0 2px;
+  background-color: #666666;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.top-banner .phone-details-section .active,
+.top-banner .phone-details-section .dot:hover {
+  background-color: #717171;
 }
 
 .top-banner .phone-details-section .title {
@@ -76,15 +94,16 @@
 }
 
 .product-category-card-container {
-  width: 200px;
-  height: 201px;
+  width: 260px;
+  height: 260px;
   position: relative;
   margin-top: -20px;
+  z-index: 1;
 }
 
 .product-category-card-container img {
-  width: -webkit-fill-available;
-  height: -webkit-fill-available;
+  width: 260px;
+  height: 260px;
 }
 
 .product-category-card-container .footer-section {
@@ -120,6 +139,18 @@
 .banner2-section {
   margin-top: 30px;
   text-align: left;
+}
+
+.banner2-section .banner2-bg-img {
+  background-image: url(../assets/img/bannerimg_2.png);
+  background-size: 836px 1460px;
+  height: 650px;
+  background-repeat: no-repeat;
+  background-position-y: -240px;
+}
+
+.banner2-section .text-section {
+  padding: 50px;
 }
 
 .banner2-section .text-section .title {
@@ -162,6 +193,7 @@
   opacity: 1;
   margin-top: 20px;
   float: left;
+  border: none;
 }
 
 .banner2-section .img-section img {
@@ -173,10 +205,34 @@
   margin-top: 30px;
 }
 
+.banner3-section .img-marker {
+  position: relative;
+  margin-top: -80px;
+  margin-right: -51px;
+  width: 41px;
+  width: 102px;
+  height: 72px;
+  float: right;
+}
+
+.banner3-section .img-marker img {
+  width: 33px;
+}
+
+.banner3-section .img-marker hr {
+  width: 102px;
+  height: 8px;
+  background: #E26A2C 0% 0% no-repeat padding-box;
+  opacity: 1;
+  margin-top: 9px;
+  float: left;
+  border: none;
+}
+
 .banner3-section .text-section {
   background: #1B252C 0% 0% no-repeat padding-box;
-  height: 332px;
-  padding: 65px;
+  height: 356px;
+  padding: 50px;
 }
 
 .banner3-section .text-section .title {
@@ -230,11 +286,13 @@
   opacity: 1;
   margin-top: 20px;
   float: left;
+  border: none;
 }
 
 .banner3-section .img-section img {
   width: -webkit-fill-available;
   height: 430px;
+  margin-top: 15px;
   margin-top: 15px;
 }
 
@@ -259,13 +317,22 @@
   color: inherit;
 }
 
+.banner1-bg-img {
+  background-image: url(../assets/img/bannerimg_1.png);
+  background-size: 836px 1460px;
+  height: 650px;
+  background-repeat: no-repeat;
+  background-position-y: -240px;
+}
+
 @media screen and (max-width: 768px) {
   .product-category-card-container {
-    margin-top: 10px;
-  }
-  .product-category-card-container {
+    margin-top: 63px;
     width: 343px;
     height: 267px;
+  }
+  .image-section img {
+    height: auto !important;
   }
   .banner2-section {
     text-align: center !important;
@@ -273,22 +340,95 @@
   .banner2-section hr {
     text-align: center;
   }
+  .banner3-section .img-marker {
+    margin-top: -45px;
+    width: 102px;
+    height: 72px;
+    z-index: 1;
+    float: initial;
+    padding-bottom: 31px;
+    margin-left: -352px;
+  }
+  .banner3-section .img-marker img {
+    float: initial;
+  }
   .banner3-section .text-section {
     width: 343px;
     height: 210px;
-    margin-top: -40px;
+    margin-top: -80px;
     position: relative;
+  }
+  .top-banner .banner1-bg-img {
+    background-size: 836px 1460px;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-position-y: -169px;
+    background-position-x: -126px;
+  }
+  .product-category-card-container {
+    margin-top: -46px;
+    margin-bottom: 80px;
+    width: 343px;
+    height: 267px;
+  }
+  .product-category-card-container img {
+    width: 343px;
+    height: 267px;
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+  .top-banner .banner1-bg-img {
+    background-size: 1310px 870px;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-position-y: -152px;
+    background-position-x: -102px;
+  }
   .product-category-card-container {
-    margin-top: 10px;
+    margin-top: -46px;
+    margin-bottom: 80px;
+    width: 343px;
+    height: 267px;
+  }
+  .image-section img {
+    height: auto !important;
+  }
+  .banner2-section {
+    text-align: center !important;
+  }
+  .banner2-section hr {
+    text-align: center;
+  }
+  .banner3-section .img-marker {
+    margin-top: -45px;
+    width: 102px;
+    height: 72px;
+    z-index: 1;
+    float: initial;
+    padding-bottom: 31px;
+    margin-left: -352px;
+  }
+  .banner3-section .img-marker img {
+    float: initial;
+  }
+  .banner3-section .text-section {
+    width: 343px;
+    height: 210px;
+    margin-top: -80px;
+    position: relative;
+    padding: 50px;
   }
   .product-category-card-container {
     width: 343px;
     height: 267px;
   }
+  .product-category-card-container img {
+    width: 343px;
+    height: 267px;
+  }
 }
+
+/* The dots/bullets/indicators */
 
 /*# sourceMappingURL=_home.css.map */

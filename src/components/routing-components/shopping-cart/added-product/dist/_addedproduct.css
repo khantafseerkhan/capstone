@@ -31,6 +31,10 @@ Added Products=====
   font: normal normal normal 16px Muli;
 }
 
+.productcontainer .quantitycontainer .quntity-section {
+  margin-top: 50px;
+}
+
 .productcontainer .quantitycontainer .quntity-section .title-section {
   text-align: left;
   font: normal normal 600 20px/30px Muli;
@@ -39,12 +43,11 @@ Added Products=====
 }
 
 .productcontainer .quantitycontainer .quntity-section input {
-  width: 34px;
   border: 2px solid var(--gray-m1);
   background: #FFFFFF 0% 0% no-repeat padding-box;
   border: 2px solid #91959C;
   border-radius: 8px;
-  width: 114px;
+  width: 88px;
   height: 40px;
   margin-left: 9px;
   margin-right: 9px;
@@ -76,12 +79,28 @@ Added Products=====
   text-decoration: none;
 }
 
+.productcontainer .edit-section ul li a img {
+  width: 16px;
+  height: 14px;
+}
+
 .productcontainer .edit-section ul li span {
-  vertical-align: super;
   text-align: left;
   font: normal normal 600 12px/14px Muli;
   letter-spacing: 0px;
   color: #172026;
+}
+
+@media screen and (max-width: 768px) {
+  .quntity-section {
+    margin-top: 0px !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .quntity-section {
+    margin-top: 0px !important;
+  }
 }
 
 /*# sourceMappingURL=_addedproduct.css.map */

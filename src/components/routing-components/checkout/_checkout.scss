@@ -2,3 +2,30 @@
 @import "./shipping-info/_shipping-info.scss";
 @import "./shipping-method/_shipping-method.scss";
 @import "./order-items/_orderitem.scss";
+
+
+.edit-details{
+    float: right;
+    position: relative;
+    margin-top: -26px;
+    margin-right: 21px;
+
+    a{
+        text-align: right;
+        font: normal normal 600 16px/22px Muli;
+        letter-spacing: 0px;
+        color: #E26A2C;
+        text-decoration: none;
+    }
+        img{
+
+        }
+        span{
+            margin-left: 3px;
+        }
+    }
+
+
+    
+
+    

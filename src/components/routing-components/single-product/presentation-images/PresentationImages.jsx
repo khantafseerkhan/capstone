@@ -2,7 +2,6 @@ import { useEffect } from "react";
 
 const PresentationImages = (props) => {
 
-  console.log("img    " + props.propductimg)
 
   let slideIndex = 1;
 
@@ -50,7 +49,6 @@ const PresentationImages = (props) => {
   const activeli=(e)=>{
     let el=e.target;
     let siblings=el.parentElement.parentElement.children
-    console.log(siblings.length);
 
     for(let i=0;i<5;i++){
       siblings[i].classList.remove('active-border');
@@ -104,21 +102,21 @@ const PresentationImages = (props) => {
       <div className="aem-Grid aem-Grid--12 tab-show phone-show">
         <div className="aem-GridColumn aem-GridColumn--default--12 ">
 
-          <div className="slideshow-container">
+          <div className="slideshow-container ">
 
-            <div className="mySlides fade">
+            <div className="mySlides fade center-box">
               <div className="numbertext">1 / 3</div>
-              <img src={props.propductimg} style={{ width: "100%" }} alt="item" />
+              <img src={props.propductimg}  alt="item" />
             </div>
 
-            <div className="mySlides fade">
+            <div className="mySlides fade center-box">
               <div className="numbertext">2 / 3</div>
-              <img src={props.propductimg} style={{ width: "100%" }} alt="item" />
+              <img src={props.propductimg}  alt="item" />
             </div>
 
-            <div className="mySlides fade">
+            <div className="mySlides fade center-box">
               <div className="numbertext">3 / 3</div>
-              <img src={props.propductimg} style={{ width: "100%" }} alt="item" />
+              <img src={props.propductimg}  alt="item" />
             </div>
 
 

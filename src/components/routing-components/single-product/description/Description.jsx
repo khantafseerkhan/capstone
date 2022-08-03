@@ -21,13 +21,17 @@ const Description = (props) => {
                         <div className="description">
                             {props.productdata.description}
                         </div>
+
+                        <hr />
                     </div>
+
+                     
                 </div>
 
 
 
 
-                <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+                {/* <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
                     <div className="product-details-section">
                         <div className="title  tab-center phone-center">Details</div>
 
@@ -45,7 +49,7 @@ const Description = (props) => {
 
                         </div>
                     </div>
-                </div>
+                </div> */}
 
                 {/* <div className="aem-GridColumn aem-GridColumn--default--4"></div> */}
 

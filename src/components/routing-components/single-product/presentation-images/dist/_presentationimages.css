@@ -39,6 +39,10 @@ image container css
   display: none;
 }
 
+.mySlides img {
+  width: 343px;
+}
+
 img {
   vertical-align: middle;
 }

@@ -44,7 +44,7 @@ Added Products=====
     .quantitycontainer {
 
         .quntity-section {
-
+            margin-top: 50px;
             .title-section {
                 text-align: left;
                 font: normal normal 600 20px/30px Muli;
@@ -53,12 +53,12 @@ Added Products=====
             }
 
             input {
-                width: 34px;
+               
                 border: 2px solid var(--gray-m1);
                 background: #FFFFFF 0% 0% no-repeat padding-box;
                 border: 2px solid #91959C;
                 border-radius: 8px;
-                width: 114px;
+                width: 88px;
                 height: 40px;
                 margin-left: 9px;
                 margin-right: 9px;
@@ -99,10 +99,13 @@ Added Products=====
                    
                     text-decoration: none;
 
+                    img{
+                        width: 16px;
+                        height: 14px;
+                    }
                 }
 
                 span{
-                    vertical-align: super;
                     text-align: left;
                     font: normal normal 600 12px/14px Muli;
                     letter-spacing: 0px;
@@ -114,3 +117,22 @@ Added Products=====
         }
     }
 }
+
+
+
+
+//===========for phone
+@media screen and (max-width: 768px) {
+    .quntity-section{
+        margin-top: 0px !important;    }
+    }
+    
+    //=============for tablet
+    
+    @media screen and (max-width: 1200px) {
+        .quntity-section{
+
+            margin-top: 0px !important;       
+         }
+        
+    }

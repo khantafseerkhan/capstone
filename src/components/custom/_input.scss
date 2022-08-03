@@ -1,10 +1,10 @@
 
 
 @mixin custombutton($background,$color,$border,$width){
-    width: 347px;
+    width: $width;
     height: 40px;
     /* UI Properties */
-    background: $background x;
+    background: $background;
     border: 2px solid #D4703D;
     color:$color
 
@@ -92,4 +92,18 @@ box-shadow: 0 0 10px #719ECE;
     font: normal normal bold 14px/16px Muli;
     letter-spacing: 0px;
     text-transform: uppercase;
+}
+
+.button-show {
+    width: 190px;
+    height: 40px;
+
+    @include custombutton( #D4703D 0% 0% no-repeat padding-box,white !important,2px solid #D4703D, 190px );
+
+    text-align: center;
+    font: normal normal bold 14px/16px Muli;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;        
 }

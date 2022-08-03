@@ -23,8 +23,6 @@ const SingleProduct = () => {
             // setSingleProductdata(json)
             let temp = [];
             //temp.push(json)
-            //   console.log(temp)
-            console.log(json)
             setSingleProductdata(json);
 
         });

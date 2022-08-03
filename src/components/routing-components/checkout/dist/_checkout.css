@@ -1,3 +1,7 @@
+.summary-card {
+  padding: 10px;
+}
+
 .sign-section .details {
   text-align: left;
   font: normal normal 600 20px/25px Muli;
@@ -70,16 +74,15 @@
   line-height: 25px;
 }
 
-.details-section {
+.saved-details-section {
   height: 176px;
   /* UI Properties */
   border: 1px solid #D1D3D6;
   border-radius: 2px;
   opacity: 1;
-  padding: 20px;
 }
 
-.details-section .subhead {
+.saved-details-section .subhead {
   text-align: left;
   font: normal normal 600 16px/20px Muli;
   letter-spacing: 0px;
@@ -87,24 +90,25 @@
   line-height: 20px;
   margin: 7px 0px;
   width: max-content;
-  display: none;
 }
 
-.details-section .left-info .content {
+.saved-details-section .left-info .content {
   text-align: left;
   font: normal normal normal 16px/24px Muli;
   letter-spacing: 0px;
   color: #535965;
   line-height: 24px;
   padding: 4px;
+  overflow-wrap: break-word;
 }
 
-.details-section .right-info .content {
+.saved-details-section .right-info .content {
   text-align: left;
   font: normal normal normal 16px/24px Muli;
   letter-spacing: 0px;
   color: #535965;
   line-height: 24px;
+  overflow-wrap: break-word;
 }
 
 .form-section .title {
@@ -133,17 +137,16 @@
   opacity: 1;
 }
 
-.details-section {
+.saved-details-section {
   height: 176px;
   /* UI Properties */
   border: 1px solid #D1D3D6;
   border-radius: 2px;
   opacity: 1;
   width: initial;
-  padding: 20px;
 }
 
-.details-section .subhead {
+.saved-details-section .subhead {
   text-align: left;
   font: normal normal 600 16px/20px Muli;
   letter-spacing: 0px;
@@ -153,25 +156,102 @@
   width: max-content;
 }
 
-.details-section .left-info .content {
+.saved-details-section .left-info .content {
   text-align: left;
   font: normal normal normal 16px/24px Muli;
   letter-spacing: 0px;
   color: #535965;
   line-height: 24px;
   padding: 4px;
+  overflow-wrap: break-word;
 }
 
-.details-section .right-info .content {
+.saved-details-section .right-info .content {
   text-align: left;
   font: normal normal normal 16px/24px Muli;
   letter-spacing: 0px;
   color: #535965;
   line-height: 24px;
+  overflow-wrap: break-word;
 }
 
-.item-card .detail-container ul {
+.order-container {
+  border: 1px solid #D1D3D6;
+  border-radius: 2px;
+}
+
+.order-container .subhead {
+  text-align: left;
+  font: normal normal 600 16px/20px Muli;
+  letter-spacing: 0px;
+  color: #172026;
+  line-height: 20px;
+}
+
+.order-container .item-card .img-container img {
+  width: 100px;
+  height: 120px;
+}
+
+.order-container .item-card .detail-container ul {
   list-style: none;
+}
+
+.order-container .item-card .detail-container ul li {
+  text-align: left;
+  font: normal normal normal 16px/24px Muli;
+  letter-spacing: 0px;
+  color: #172026;
+  line-height: 24px;
+}
+
+.button-section button {
+  width: 300px !important;
+  height: 40px !important;
+}
+
+.button-section .note {
+  text-align: center;
+  text-decoration: underline;
+  font: normal normal 600 16px/24px Muli;
+  letter-spacing: 0px;
+  line-height: 24px;
+}
+
+.button-section .note a {
+  text-decoration: underline;
+  line-height: 24px;
+}
+
+.edit-details {
+  float: right;
+  position: relative;
+  margin-top: -26px;
+  margin-right: 21px;
+}
+
+.edit-details a {
+  text-align: right;
+  font: normal normal 600 16px/22px Muli;
+  letter-spacing: 0px;
+  color: #E26A2C;
+  text-decoration: none;
+}
+
+.edit-details span {
+  margin-left: 3px;
+}
+
+@media screen and (max-width: 768px) {
+  .edit-details {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .edit-details {
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=_checkout.css.map */

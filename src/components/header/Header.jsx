@@ -1,83 +1,142 @@
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
-
+import { hasClass } from "../../assets/customjs/custom";
 
 const Header = (props) => {
     let navigate = useNavigate();
     const cartCount = useSelector(state => state.updateCartProduct.cartCount);
 
-console.log("cartCount    === "+cartCount)
+
+    const openNav = () => {
+        let phonenav = document.getElementById("phonenav");
+        if (hasClass(phonenav, "activenav")) {
+            phonenav.classList.remove("activenav");
+            document.getElementById("mainbody").style.overflow = "initial";
+
+        } else {
+            phonenav.classList.add("activenav");
+            document.getElementById("mainbody").style.overflow = "hidden";
+
+        }
+
+    }
+    const closeNav = () => {
+        let phonenav = document.getElementById("phonenav");
+        if (hasClass(phonenav, "activenav")) {
+            phonenav.classList.remove("activenav");
+            document.getElementById("mainbody").style.overflow = "initial";
+
+
+        }
+    }
+
 
     const goToCart = () => {
         navigate("/shoppingcart")
     }
 
     return (
+        <>
 
+            <div className="aem-Grid aem-Grid--12">
+                <div className="aem-GridColumn aem-GridColumn--default--12">
+                    <div className="aem-Grid aem-Grid--12">
+                        <div className="aem-GridColumn aem-GridColumn--default--1">
+                            <div className="phone-hide">&nbsp;</div>
+                            <button className="tab-show phone-show nav-button" onClick={() => openNav()}>
+                                <img src={require("../../assets/img/menu.png")} alt="menu button " />
 
-        <div className="aem-Grid aem-Grid--12">
-            <div className="aem-GridColumn aem-GridColumn--default--12">
-                <div className="aem-Grid aem-Grid--12">
-                    <div className="aem-GridColumn aem-GridColumn--default--1">
-                    <div className="phone-hide">&nbsp;</div>
-                    <button className="phone-show nav-button">
-                      <img src={require("../../assets/img/menu.png")} alt="menu button " />
+                            </button>
+                        </div>
 
-                    </button>
-                    </div>
-
-                    <div className="aem-GridColumn aem-GridColumn--default--10">
-                        <div className="aem-Grid aem-Grid--12">
-                            <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--9">
-                                <div className="head-log">
-                                    VENIA
+                        <div className="aem-GridColumn aem-GridColumn--default--10">
+                            <div className="aem-Grid aem-Grid--12">
+                                <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--9 aem-GridColumn--phone--9">
+                                    <div className="head-log">
+                                        VENIA
+                                    </div>
                                 </div>
-                            </div>
 
 
-                            <div className="aem-GridColumn aem-GridColumn--default--6 phone-hide">
-                                <nav className="menu">
-                                    <ul>
-                                        <li><a href="/" role='button' aria-label='Home'>Home</a></li>
-                                        <li><a href="/productcategory/women'snnclothing" role='button' aria-label='Women'>Women</a></li>
-                                        <li><a href="/productcategory/men'snnclothing" role='button' aria-label='Men'>Men</a></li>
-                                        <li><a href="/productcategory/electronics" role='button' aria-label='Electronics'>Electronics</a></li>
-
-
-                                        <li><a href="/productcategory/jewelery" role='button' aria-label='Jewellery'>Jewellery</a></li>
-
-                                    </ul>
-                                </nav>
-                            </div>
-
-
-                            <div className="aem-GridColumn aem-GridColumn--default--3">
-                                <div className="right-nav">
+                                <div className="aem-GridColumn aem-GridColumn--default--6 tab-hide phone-hide">
                                     <nav className="menu">
                                         <ul>
-                                            <li>
-                                                <a href="javascript:void(0)" role='button' aria-label='Home'    onClick={() => goToCart()} >
-                                                    <img alt="Cart" src={require("../../assets/img/shopping-bag.png")} />
-                                                </a>
-                                                <div className="badge">{cartCount}</div>
-                                            </li>
+                                            <li><a href="javascript:void(0)" onClick={() => navigate("/")} role='button' aria-label='Home'>Home</a></li>
+                                            <li><a href="javascript:void(0)" onClick={() => navigate("/productcategory/women'snnclothing")} role='button' aria-label='Women'>Women</a></li>
+                                            <li><a href="javascript:void(0)" onClick={() => navigate("/productcategory/men'snnclothing")} role='button' aria-label='Men'>Men</a></li>
+                                            <li><a href="javascript:void(0)" onClick={() => navigate("/productcategory/electronics")} role='button' aria-label='Electronics'>Electronics</a></li>
+
+
+                                            <li><a href="javascript:void(0)" onClick={() => navigate("/productcategory/jewelery")} role='button' aria-label='Jewellery'>Jewellery</a></li>
 
                                         </ul>
                                     </nav>
                                 </div>
+
+
+                                <div className="aem-GridColumn aem-GridColumn--default--3">
+                                    <div className="right-nav">
+                                        <nav className="menu">
+                                            <ul>
+                                                <li>
+                                                    <a href="javascript:void(0)" role='button' aria-label='Home' onClick={() => goToCart()} >
+                                                        <img alt="Cart" src={require("../../assets/img/shopping-bag.png")} />
+                                                    </a>
+                                                    <div className="badge">{cartCount}</div>
+                                                </li>
+
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="aem-GridColumn aem-GridColumn--default--1 phone-hide">
-                    &nbsp; 
-                    </div>
+                        <div className="aem-GridColumn aem-GridColumn--default--1 phone-hide">
+                            &nbsp;
+                        </div>
 
+
+                    </div>
 
                 </div>
 
             </div>
 
-        </div>
+
+            <div className="aem-Grid aemGrid--12 tab-show shadow phone-show">
+                <div className="aem-GridColumn aem-GridColumn--phone--12 head-phonenav" id="phonenav">
+                    <div className="header">Shopping Category
+                        <div>   <a onClick={() => closeNav()}>&#x2715;</a></div>
+                    </div>
+                    <nav role='navigation' aria-label='Mobile Menu'>
+                        <ul>
+                            <li><a href="javascript:void(0)" onClick={() => navigate("/")} role='button' aria-label='Home'>Home</a></li>
+                            <li><a href="javascript:void(0)" onClick={() => navigate("/productcategory/women'snnclothing")} role='button' aria-label='Women'>Women</a></li>
+                            <li><a href="javascript:void(0)" onClick={() => navigate("/productcategory/men'snnclothing")} role='button' aria-label='Men'>Men</a></li>
+                            <li><a href="javascript:void(0)" onClick={() => navigate("/productcategory/electronics")} role='button' aria-label='Electronics'>Electronics</a></li>
+
+
+                            <li><a href="javascript:void(0)" onClick={() => navigate("/productcategory/jewelery")} role='button' aria-label='Jewellery'>Jewellery</a></li>
+
+                        </ul>
+                    </nav>
+
+                    <div className="bottom-section shadow">
+                        <div className="bottom-footer">
+                            <div>
+                                <img alt="Account" src={require("../../assets/img/user.png")} style={{ paddingRight: "10px" }} />
+                                <a href="javascript:void(0)" role='button' aria-label='Account'>Account</a>
+                            </div>
+
+                            <div>
+                                <a href="javascript:void(0)" role='button' aria-label='Sign in'>Sign in</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </>
     )
 }
 

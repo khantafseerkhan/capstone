@@ -54,7 +54,10 @@ image container css
 
 
 .mySlides {
-    display: none
+    display: none;
+    img{
+        width: 343px;
+    }
 }
 
 img {

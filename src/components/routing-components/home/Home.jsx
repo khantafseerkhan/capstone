@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 
 const Home = () => {
 
-    // console.log(homeData);
     let navigate = useNavigate();
 
 
@@ -24,8 +23,10 @@ const Home = () => {
                 <div className="aem-GridColumn aem-GridColumn--default--12 top-banner">
 
                     <div className="aem-Grid aem-Grid--12 tab-show phone-show">
-                        <div className="aem-GridColumn aem-GridColumn--tablet--12  aem-GridColumn--phone--12  image-section">
-                            <img alt="banner image" src={require("../../../assets/img/bannerimg_1.png")} />
+                        <div className="aem-GridColumn aem-GridColumn--tablet--12  aem-GridColumn--phone--12   banner1-bg-img">
+
+
+                            {/* <img alt="banner image" src={require("../../../assets/img/bannerimg_1.png")} /> */}
 
                             <div className="phone-details-section">
                                 <div className="title">{homeData.banner1.title}</div>
@@ -34,7 +35,11 @@ const Home = () => {
 
                                 <div className="aem-GridColumn aem-GridColumn--default--6 btn-section">
                                     <button type="button" className="orangebtn">Shop Now</button>
-
+                                    <div style={{ textAlign: "center", paddingTop:"5px" }}>
+                                        <span className="dot" ></span>
+                                        <span className="dot" ></span>
+                                        <span className="dot" ></span>
+                                    </div>
 
                                 </div>
                             </div>
@@ -57,14 +62,14 @@ const Home = () => {
                                 <div className="aem-GridColumn aem-GridColumn--default--6 btn-section">
                                     <button type="button" className="orangebtn">Shop Now</button>
 
-
+                                    
                                 </div>
 
                             </div>
                         </div>
 
-                        <div className="aem-GridColumn aem-GridColumn--default--6 image-section">
-                            <img alt="banner image" src={require("../../../assets/img/bannerimg_1.png")} />
+                        <div className="aem-GridColumn aem-GridColumn--default--6  banner1-bg-img">
+                            {/* <img alt="banner image" src={require("../../../assets/img/bannerimg_1.png")} /> */}
                         </div>
                     </div>
                 </div>
@@ -74,39 +79,41 @@ const Home = () => {
 
             {/* product category  section */}
 
+            <div>
 
-            <div className="aem-Grid aem-Grid--12">
+                <div className="aem-Grid aem-Grid--12 ">
 
 
-                <div className="aem-GridColumn aem-GridColumn--default--10 aem-GridColumn aem-GridColumn--tablet--11 aem-GridColumn--phone--12 unset-float center-box">
-                    <div className="aem-Grid aem-Grid--12 ">
+                    <div className="aem-GridColumn aem-GridColumn--default--10 aem-GridColumn aem-GridColumn--tablet--11 aem-GridColumn--phone--12 unset-float center-box">
+                        <div className="aem-Grid aem-Grid--12 ">
 
-                        {/* Banner section */}
+                            {/* Banner section */}
 
-                        {
-                            homeData.displayproduct.map((element) => {
-                                return (
-                                    <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn aem-GridColumn--tablet--6 aem-GridColumn aem-GridColumn--phone--12" role="button" aria-label={element.title} onClick={() => redirect(element.category)}>
-                                        <div className="product-category-card-container">
-                                            <img src={element.img} alt={element.title} />
+                            {
+                                homeData.displayproduct.map((element) => {
+                                    return (
+                                        <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn aem-GridColumn--tablet--6 aem-GridColumn aem-GridColumn--phone--12">
+                                            <div className="product-category-card-container" role="button" aria-label={element.title} onClick={() => redirect(element.category)}>
+                                                <img src={element.img} alt={element.title} />
 
-                                            <div className="footer-section">
-                                                <div className="title">{element.title}</div>
-                                                <div className="sub-title">{element.subtitle}</div>
+                                                <div className="footer-section">
+                                                    <div className="title">{element.title}</div>
+                                                    <div className="sub-title">{element.subtitle}</div>
+                                                </div>
                                             </div>
+
                                         </div>
-
-                                    </div>
-                                )
-                            })
-                        }
+                                    )
+                                })
+                            }
 
 
+                        </div>
                     </div>
+
                 </div>
 
             </div>
-
             {/* banner 2 */}
 
 
@@ -137,14 +144,14 @@ const Home = () => {
                                 <div className="aem-Grid aem-Grid--12 ">
 
 
-                                    <div className="aem-GridColumn aem-GridColumn--default--6 btn-section">
+                                    <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 btn-section">
                                         <button type="button" className="transparent">Shop Now</button>
 
 
                                     </div>
 
-                                    <div className="aem-GridColumn aem-GridColumn--default--6 btn-section">
-                                        <button type="button" className="orangebtn">Shop Now</button>
+                                    <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 btn-section">
+                                        <button type="button" className="orangebtn">Shop Collection</button>
 
 
                                     </div>
@@ -189,28 +196,33 @@ const Home = () => {
 
                             </div>
 
-                           <div className="tab-show phone-show">
-                           <div className="text-section">
-                                <div className="title">{homeData.banner3.title}</div>
-                                <div className="subtitle">{homeData.banner3.subtitle}</div>
+                            <div className="img-marker">
+                                <img src={require("../../../assets/img/marker_w.png")} alt="Track Marker" />
+                                <hr />
+                            </div>
+
+                            <div className="tab-show phone-show">
+                                <div className="text-section">
+                                    <div className="title">{homeData.banner3.title}</div>
+                                    <div className="subtitle">{homeData.banner3.subtitle}</div>
 
 
-                                <div className="aem-Grid aem-Grid--12 ">
+                                    <div className="aem-Grid aem-Grid--12 ">
 
 
-                                    <div className="aem-GridColumn aem-GridColumn--default--6 btn-section">
-                                        <button type="button" className="transparent">Shop Now</button>
+                                        <div className="aem-GridColumn aem-GridColumn--default--6 btn-section">
+                                            <button type="button" className="transparent">Shop Device</button>
 
+
+                                        </div>
+
+
+
+                                        {/* <hr /> */}
 
                                     </div>
-
-
-
-                                    {/* <hr /> */}
-
                                 </div>
                             </div>
-                           </div>
 
 
                         </div>

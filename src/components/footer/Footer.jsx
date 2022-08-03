@@ -61,7 +61,7 @@ const Footer = (props) => {
                             footerDetails.map((element) => {
                                 return (
                                     <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--6 aem-GridColumn--phone--12">
-                                        <div className="footer-nav">
+                                        <div className="footer-nav padding10">
                                             <div className="title">{element.type.title}</div>
                                             <nav>
                                                 <ul>
