@@ -38,16 +38,6 @@ const Filter = (props) => {
         }
     ];
 
-    useEffect(() => {
-   
-            if(id!=""){
-                document.getElementById(id).checked=true;
-                document.getElementById(id+"_mob").checked=true;
-
-            }
-
-
-},[])
 
     const filteringData = (e, type) => {
         var myCheckbox = document.getElementsByName("filteringCheck");

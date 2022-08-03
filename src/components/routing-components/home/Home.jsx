@@ -13,6 +13,12 @@ const Home = () => {
 
     }
 
+    const shopnowredirect = () => {
+        navigate("/productcategory");
+
+
+    }
+
 
     return (
         <div className='center-box'>
@@ -34,7 +40,7 @@ const Home = () => {
 
 
                                 <div className="aem-GridColumn aem-GridColumn--default--6 btn-section">
-                                    <button type="button" className="orangebtn">Shop Now</button>
+                                    <button type="button" className="orangebtn"  onClick={() => shopnowredirect()}>Shop Now</button>
                                     <div style={{ textAlign: "center", paddingTop:"5px" }}>
                                         <span className="dot" ></span>
                                         <span className="dot" ></span>
@@ -60,7 +66,7 @@ const Home = () => {
 
 
                                 <div className="aem-GridColumn aem-GridColumn--default--6 btn-section">
-                                    <button type="button" className="orangebtn">Shop Now</button>
+                                    <button type="button" className="orangebtn"  onClick={() => shopnowredirect()}>Shop Now</button>
 
                                     
                                 </div>
@@ -145,13 +151,13 @@ const Home = () => {
 
 
                                     <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 btn-section">
-                                        <button type="button" className="transparent">Shop Now</button>
+                                        <button type="button" className="transparent" onClick={() => shopnowredirect()}>Shop Now</button>
 
 
                                     </div>
 
                                     <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 btn-section">
-                                        <button type="button" className="orangebtn">Shop Collection</button>
+                                        <button type="button" className="orangebtn"  onClick={() => shopnowredirect()}>Shop Collection</button>
 
 
                                     </div>
@@ -237,7 +243,7 @@ const Home = () => {
 
 
                                     <div className="aem-GridColumn aem-GridColumn--default--6 btn-section">
-                                        <button type="button" className="transparent">Shop Now</button>
+                                        <button type="button" className="transparent"  onClick={() => shopnowredirect()}>Shop Now</button>
 
 
                                     </div>

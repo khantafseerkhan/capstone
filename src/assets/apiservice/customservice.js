@@ -1,4 +1,4 @@
-export const getservice=async (path)=>{
+export const getservice= async (path)=>{
 
     const requestOptions = {
         method: 'GET',

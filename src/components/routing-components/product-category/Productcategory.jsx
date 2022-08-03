@@ -30,7 +30,7 @@ const ProductCategory = () => {
     // console.log("param    "+useParams().id);
     let id = useParams().id;
     if (!id) {
-        id = ""
+        id = "";
     } else {
         id = id.replace("nn", " ");
     }
@@ -71,24 +71,24 @@ const ProductCategory = () => {
     const getFilteredDetails = (type) => {
        // const apires = type == "" ? getservice('https://fakestoreapi.com/products/') : getservice('https://fakestoreapi.com/products/category/' + type);
        
-     const apires = getservice('https://fakestoreapi.com/products/');
-       apires.then(json => {
+     const apires = getservice('https://fakestoreapi.com/products').then(json => {
 
 
-            setProductDetails(json)
-
-            const firstPageIndex = (currentPage - 1) * PageSize;
-            const lastPageIndex = firstPageIndex + PageSize;
-            setTotalcount(json.length);
-            setFilteredData(json.slice(firstPageIndex, lastPageIndex));
+            setProductDetails(json);
+            // console.log(json.length)
+            // const firstPageIndex = (currentPage - 1) * PageSize;
+            // const lastPageIndex = firstPageIndex + PageSize;
+            // setTotalcount(json.length);
+            // setFilteredData(json.slice(firstPageIndex, lastPageIndex));
 
 
         });
     }
 
     const multipleFilters=(filterBy)=>{
+        console.log(filterBy)
         let categoryData=productDetails;
-        if(filterBy.length>0){
+        if(filterBy.length>0 && filterBy[0]!=''){
             if(filterBy.length==1){
                 categoryData=categoryData.filter(x=>(x.category==filterBy[0]));
             }else if(filterBy.length==2){

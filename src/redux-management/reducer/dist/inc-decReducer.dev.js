@@ -16,26 +16,26 @@ var initialstate = {
   cartCount: localStorage.getItem("cartdata") ? JSON.parse(localStorage.getItem("cartdata")).length : 0,
   shippingDetails: localStorage.getItem("shippingDetails") ? JSON.parse(localStorage.getItem("shippingDetails")) : [{
     shippingInfo: {
-      email: "",
-      phone: "",
-      country: "",
-      fname: "",
-      lname: "",
-      address1: "",
-      address2: "",
-      city: "",
-      state: "",
-      zip: ""
+      email: "john@gmail.com",
+      phone: "9822222232",
+      country: "United State",
+      fname: "John",
+      lname: "Selvik",
+      address1: "Food Street",
+      address2: "Near Domino's",
+      city: "Washington ",
+      state: "Washington DC",
+      zip: "343434"
     },
     shippingMethod: {
-      deliverymethod: "",
+      deliverymethod: "Standard Shipping (4-8 business days via USPS) FREE",
       charge: 0
     },
     paymentInfo: {
-      cardholdername: "",
-      cardnumber: "",
-      expiry: "",
-      cvv: ""
+      cardholdername: "John Selvik",
+      cardnumber: "34343456789032",
+      expiry: "12/27",
+      cvv: "332"
     }
   }]
 };
