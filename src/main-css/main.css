@@ -478,16 +478,20 @@
 }
 
 .product-category-card-container {
-  width: 260px;
+  width: 235px;
   height: 260px;
   position: relative;
   margin-top: -20px;
   z-index: 1;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .product-category-card-container img {
   width: 260px;
   height: 260px;
+  display: none;
 }
 
 .product-category-card-container .footer-section {
@@ -527,10 +531,12 @@
 
 .banner2-section .banner2-bg-img {
   background-image: url(../assets/img/bannerimg_2.png);
-  background-size: 836px 1460px;
-  height: 650px;
+  height: 450px;
+  background-position: initial;
   background-repeat: no-repeat;
-  background-position-y: -240px;
+  background-size: 454px 789px;
+  background-color: red;
+  background-position-y: -70px;
 }
 
 .banner2-section .text-section {
@@ -743,7 +749,7 @@
     position: relative;
   }
   .top-banner .banner1-bg-img {
-    background-size: 836px 1460px;
+    background-size: 895px 950px;
     height: 650px;
     background-repeat: no-repeat;
     background-position-y: -169px;
@@ -758,6 +764,9 @@
   .product-category-card-container img {
     width: 343px;
     height: 267px;
+  }
+  .banner2-bg-img {
+    background-size: 100% 740px !important;
   }
 }
 
@@ -811,6 +820,13 @@
     width: 343px;
     height: 267px;
   }
+  .banner2-bg-img {
+    background-size: 100% 740px !important;
+  }
+}
+
+.home-bg-product-card {
+  background-image: url(https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg);
 }
 
 /* The dots/bullets/indicators */

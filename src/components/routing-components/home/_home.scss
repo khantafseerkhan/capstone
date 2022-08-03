@@ -58,23 +58,23 @@
         height: 332px;
 
 
-        
-.dot {
-   
-    cursor: pointer;
-    height: 6px;
-    width: 6px;
-    margin: 0 2px;
-    background-color: #666666 ;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
 
-.active,
-.dot:hover {
-    background-color: #717171;
-}
+        .dot {
+
+            cursor: pointer;
+            height: 6px;
+            width: 6px;
+            margin: 0 2px;
+            background-color: #666666;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
 
         .title {
             text-align: center;
@@ -109,15 +109,22 @@
 }
 
 .product-category-card-container {
-    width: 260px;
+    width: 235px;
     height: 260px;
     position: relative;
     margin-top: -20px;
     z-index: 1;
 
+    // ==== bg img
+
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
     img {
         width: 260px;
         height: 260px;
+        display: none;
     }
 
     .footer-section {
@@ -158,14 +165,16 @@
     text-align: left;
 
 
+
+
     .banner2-bg-img {
         background-image: url(../assets/img/bannerimg_2.png);
-
-        background-size: 836px 1460px;
-        height: 650px;
+        height: 450px;
+        background-position: initial;
         background-repeat: no-repeat;
-        background-position-y: -240px;
-
+        background-size: 454px 789px;
+        background-color: red;
+        background-position-y: -70px;
     }
 
     .text-section {
@@ -434,7 +443,7 @@
     .top-banner {
         .banner1-bg-img {
 
-            background-size: 836px 1460px;
+            background-size: 895px 950px;
             height: 650px;
             background-repeat: no-repeat;
             background-position-y: -169px;
@@ -457,6 +466,12 @@
         }
 
     }
+
+    .banner2-bg-img {
+        background-size: 100% 740px !important;
+    }
+
+
 
 }
 
@@ -543,8 +558,17 @@
     }
 
 
+    .banner2-bg-img {
+        background-size: 100% 740px !important;
+    }
+
 }
 
+
+.home-bg-product-card {
+    background-image: url(https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg);
+
+}
 
 
 /* The dots/bullets/indicators */

@@ -99,7 +99,7 @@ const Home = () => {
                                 homeData.displayproduct.map((element) => {
                                     return (
                                         <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn aem-GridColumn--tablet--6 aem-GridColumn aem-GridColumn--phone--12">
-                                            <div className="product-category-card-container" role="button" aria-label={element.title} onClick={() => redirect(element.category)}>
+                                            <div className="product-category-card-container" style={{backgroundImage:"url("+element.img+")"}} role="button" aria-label={element.title} onClick={() => redirect(element.category)}>
                                                 <img src={element.img} alt={element.title} />
 
                                                 <div className="footer-section">
@@ -131,11 +131,8 @@ const Home = () => {
 
                         {/* Banner section */}
 
-                        <div className="aem-GridColumn aem-GridColumn--tablet--12 aem-GridColumn--phone--12 tab-show phone-show ">
-                            <div className="img-section">
-                                <img src={require("../../../assets/img/bannerimg_2.png")} alt="Banner 2" />
-
-                            </div>
+                        <div className="aem-GridColumn aem-GridColumn--tablet--12 aem-GridColumn--phone--12 banner2-bg-img tab-show phone-show ">
+                           
 
                         </div>
 
@@ -170,11 +167,11 @@ const Home = () => {
 
                         </div>
 
-                        <div className="aem-GridColumn aem-GridColumn--default--5 tab-hide phone-hide ">
-                            <div className="img-section">
+                        <div className="aem-GridColumn aem-GridColumn--default--5 banner2-bg-img tab-hide phone-hide " >
+                            {/* <div className="img-section">
                                 <img src={require("../../../assets/img/bannerimg_2.png")} alt="Banner 2" />
 
-                            </div>
+                            </div> */}
 
                         </div>
 
