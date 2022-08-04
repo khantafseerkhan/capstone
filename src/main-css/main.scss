@@ -84,6 +84,10 @@
   .tab-show {
       display: none;
   }
+
+  .phone-left-padding10{
+    padding-left:0px !important
+  }
 }
 
 
@@ -98,6 +102,11 @@
   .phone-hide {
       display: initial !important;
 
+  }
+
+  
+  .phone-left-padding10{
+    padding-left:0px !important
   }
 }
 
@@ -117,6 +126,11 @@
   .phone-center{
       text-align: center !important;
   
+  }
+
+  
+  .phone-left-padding10{
+    padding-left:10px
   }
 
 
@@ -142,6 +156,11 @@
       text-align: center !important;
   
   }
+
+   
+  .phone-left-padding10{
+    padding-left:10px
+  }
 }
 
 .msg{
@@ -165,14 +184,14 @@
 
 
 .border-inside-top-3{
-  border-top: 3px inset;
+  border-top: 3px outset;;
 }
 
 .border-inside-top-2{
-  border-top: 2px inset;
+  border-top: 2px outset;;
 }
 .border-inside-top-1{
-  border-top: 1px inset;
+  border-top: 1px outset;;
 }
 
 .unset-float{

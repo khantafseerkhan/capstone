@@ -50,12 +50,12 @@
 
 
     .phone-details-section {
-        padding: 16px;
+        padding: 10px;
         position: relative;
         z-index: 1;
         margin-top: 289px;
         background: transparent linear-gradient(181deg, #F1F1F100 0%, #F0F0F0 100%) 0% 0% no-repeat padding-box;
-        height: 332px;
+        height: 360px;
 
 
 
@@ -172,14 +172,12 @@
         height: 450px;
         background-position: initial;
         background-repeat: no-repeat;
-        background-size: 454px 789px;
-        background-color: red;
-        background-position-y: -70px;
+        background-size: cover;
     }
 
     .text-section {
 
-        padding: 50px;
+        padding: 25px;
 
         .title {
             font: normal normal 600 48px/60px Source Serif Pro;
@@ -376,10 +374,12 @@
 .banner1-bg-img {
     background-image: url(../assets/img/bannerimg_1.png);
 
-    background-size: 836px 1460px;
+    background-size: cover;
     height: 650px;
     background-repeat: no-repeat;
-    background-position-y: -240px;
+    /* background-position-y: -152px; */
+    /* background-position-x: -102px; */
+    background-position: center;
 
 
 }
@@ -441,15 +441,7 @@
     }
 
     .top-banner {
-        .banner1-bg-img {
-
-            background-size: 895px 950px;
-            height: 650px;
-            background-repeat: no-repeat;
-            background-position-y: -169px;
-            background-position-x: -126px;
-
-        }
+        .banner1-bg-img {}
     }
 
 
@@ -468,7 +460,10 @@
     }
 
     .banner2-bg-img {
-        background-size: 100% 740px !important;
+        //  background-size: 100% 740px !important;
+        height: 312px !important;
+        background-size: 100% 483px !important;
+        background-position-y: -51px !important;
     }
 
 
@@ -478,17 +473,7 @@
 //=============for tablet
 
 @media screen and (max-width: 1200px) and (min-width: 768px) {
-    .top-banner {
-
-        .banner1-bg-img {
-            background-size: 1310px 870px;
-            height: 650px;
-            background-repeat: no-repeat;
-            background-position-y: -152px;
-            background-position-x: -102px;
-
-        }
-    }
+    .top-banner {}
 
 
 
@@ -507,10 +492,8 @@
     }
 
     .banner2-section {
-        text-align: center !important;
 
         hr {
-            text-align: center;
         }
     }
 
@@ -539,7 +522,8 @@
             height: 210px;
             margin-top: -80px;
             position: relative;
-            padding: 50px;
+
+
 
         }
     }
@@ -559,7 +543,7 @@
 
 
     .banner2-bg-img {
-        background-size: 100% 740px !important;
+        // background-size: 100% 740px !important;
     }
 
 }

@@ -46,8 +46,7 @@ Price Summay css ===========================================
   height: 40px;
   /* UI Properties */
   background: var(--primary-brand) 0% 0% no-repeat padding-box;
-  background: #1F39FF 0% 0% no-repeat padding-box;
-  border-radius: 28px;
+  background: #E26A2C 0% 0% no-repeat padding-box;
   border: none;
   text-align: center;
   font: normal normal bold 14px/16px Muli;

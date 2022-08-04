@@ -28,7 +28,7 @@ const Home = () => {
 
                 <div className="aem-GridColumn aem-GridColumn--default--12 top-banner">
 
-                    <div className="aem-Grid aem-Grid--12 tab-show phone-show">
+                    <div className="aem-Grid aem-Grid--12  phone-show">
                         <div className="aem-GridColumn aem-GridColumn--tablet--12  aem-GridColumn--phone--12   banner1-bg-img">
 
 
@@ -52,7 +52,7 @@ const Home = () => {
                         </div>
 
                     </div>
-                    <div className="aem-Grid aem-Grid--12  tab-hide phone-hide">
+                    <div className="aem-Grid aem-Grid--12   phone-hide">
 
                         {/* Banner section */}
 
@@ -131,13 +131,13 @@ const Home = () => {
 
                         {/* Banner section */}
 
-                        <div className="aem-GridColumn aem-GridColumn--tablet--12 aem-GridColumn--phone--12 banner2-bg-img tab-show phone-show ">
+                        <div className="aem-GridColumn aem-GridColumn--tablet--12 aem-GridColumn--phone--12 banner2-bg-img phone-show ">
                            
 
                         </div>
 
 
-                        <div className="aem-GridColumn aem-GridColumn--default--7 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 ">
+                        <div className="aem-GridColumn aem-GridColumn--default--7 aem-GridColumn--tablet--6 aem-GridColumn--phone--12 ">
                             <div className="text-section">
                                 <div className="title">{homeData.banner2.title}</div>
                                 <div className="subtitle">{homeData.banner2.subtitle}</div>
@@ -167,7 +167,7 @@ const Home = () => {
 
                         </div>
 
-                        <div className="aem-GridColumn aem-GridColumn--default--5 banner2-bg-img tab-hide phone-hide " >
+                        <div className="aem-GridColumn aem-GridColumn--default--5  aem-GridColumn--tablet--6 banner2-bg-img  phone-hide " >
                             {/* <div className="img-section">
                                 <img src={require("../../../assets/img/bannerimg_2.png")} alt="Banner 2" />
 

@@ -18,13 +18,13 @@ var initialstate = {
     shippingInfo: {
       email: "john@gmail.com",
       phone: "9822222232",
-      country: "United State",
+      country: "USA",
       fname: "John",
       lname: "Selvik",
       address1: "Food Street",
       address2: "Near Domino's",
-      city: "Washington ",
-      state: "Washington DC",
+      city: "Washington",
+      state: "Washington, D.C.",
       zip: "343434"
     },
     shippingMethod: {

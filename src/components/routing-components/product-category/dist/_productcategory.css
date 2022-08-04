@@ -1,3 +1,16 @@
+.filters .clear-all-section {
+  padding: 10px;
+}
+
+.filters .clear-all-section a {
+  text-align: right;
+  text-decoration: underline;
+  font: normal normal 600 14px/24px Muli;
+  letter-spacing: 0px;
+  color: #181C24;
+  line-height: 24px;
+}
+
 .filters .head {
   text-align: left;
   font: normal normal normal 20px/14px Muli;
@@ -224,20 +237,20 @@
   margin-bottom: 15px;
   height: 320px;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -253px;
   /* background-position: center; */
-  background-size: 1000px 991px;
   /* background-origin: inherit; */
   /* background-position-x: center; */
-  background-position-y: -125px;
 }
 
 .product-banner-section .text-section {
   background: #1B252C 0% 0% no-repeat padding-box;
-  height: 220px;
-  padding: 65px;
+  height: 352px;
 }
 
 .product-banner-section .text-section .title {
+  padding: 70px 60px 0px 35px;
   text-align: center;
   font: normal normal 600 48px/60px Source Serif Pro;
   letter-spacing: 0px;
@@ -305,9 +318,7 @@
     margin-top: 0px;
     margin-bottom: 0px;
     height: 305px;
-    background-repeat: no-repeat;
-    background-size: 100% 650px;
-    background-position-y: -81px;
+    background-position-y: -195px;
   }
   .product-banner-section .text-section {
     width: -webkit-fill-available;
@@ -316,6 +327,10 @@
     position: relative;
     margin-left: 15px;
     margin-right: 15px;
+  }
+  .product-banner-section .text-section .title {
+    height: 103px;
+    padding: 0px 75px 0px 75px;
   }
   .product-banner-section .img-section img {
     margin-top: 0px;
@@ -327,26 +342,6 @@
   .result {
     text-align-last: center !important;
     padding-top: 0px;
-  }
-  .product-banner-section .bannerimg {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    height: 305px;
-    background-repeat: no-repeat;
-    background-size: 100% 650px;
-    background-position-y: -81px;
-  }
-  .product-banner-section .text-section {
-    width: -webkit-fill-available;
-    height: 159px;
-    margin-top: -60px;
-    position: relative;
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-  .product-banner-section .img-section img {
-    margin-top: 0px;
-    margin-bottom: 0px;
   }
 }
 

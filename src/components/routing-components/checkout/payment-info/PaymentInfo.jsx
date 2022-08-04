@@ -45,19 +45,23 @@ const Paymentinfo = (props) => {
     //insertpaymentInfo
     return (
         <>
-            {
-                props.form == true && (
 
                     <div className="aem-Grid aem-Grid--12 align-to-left form-section bottom-margin-10">
 
 
 
-                        <div className="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 title">
+                       { props.details==false &&
+                        (
+                            <div className={"aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 title "+(props.form==false && props.details==false?'border-inside-top-1 border-inside-bottom-1':'')}>
                             3. Payment Information
                         </div>
+                        )
+                       }
 
 
-
+                        {
+                            props.form==true && (
+                                <div className="form-section">
 
 
 
@@ -125,8 +129,15 @@ const Paymentinfo = (props) => {
                             <Button value={"Continue To Payment"} classname={['whitebtn']} CallParentEvent={addpaymentInfo} />
 
                         </div>
+
+                        </div>
+
+                            )
+                        }
+
+
+
                     </div>
-                )}
 
             {
                 props.details == true && (

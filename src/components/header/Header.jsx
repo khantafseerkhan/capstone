@@ -61,10 +61,10 @@ const Header = (props) => {
                                 <div className="aem-GridColumn aem-GridColumn--default--6 tab-hide phone-hide">
                                     <nav className="menu">
                                         <ul>
-                                            <li><a href="javascript:void(0)" onClick={() => navigate("/")} role='button' aria-label='Home'>Home</a></li>
-                                            <li><a href="javascript:void(0)" onClick={() => navigate("/productcategory/women'snnclothing")} role='button' aria-label='Women'>Women</a></li>
-                                            <li><a href="javascript:void(0)" onClick={() => navigate("/productcategory/men'snnclothing")} role='button' aria-label='Men'>Men</a></li>
-                                            <li><a href="javascript:void(0)" onClick={() => navigate("/productcategory/electronics")} role='button' aria-label='Electronics'>Electronics</a></li>
+                                            <li><a href="javascript:void(0)" onClick={() => {navigate("/");closeNav();}} role='button' aria-label='Home'>Home</a></li>
+                                            <li><a href="javascript:void(0)" onClick={() => {navigate("/productcategory/women'snnclothing");closeNav();}} role='button' aria-label='Women'>Women</a></li>
+                                            <li><a href="javascript:void(0)" onClick={() =>{ navigate("/productcategory/men'snnclothing");closeNav();}} role='button' aria-label='Men'>Men</a></li>
+                                            <li><a href="javascript:void(0)" onClick={() => {navigate("/productcategory/electronics");closeNav();}} role='button' aria-label='Electronics'>Electronics</a></li>
 
 
                                             <li><a href="javascript:void(0)" onClick={() => navigate("/productcategory/jewelery")} role='button' aria-label='Jewellery'>Jewellery</a></li>
@@ -82,7 +82,7 @@ const Header = (props) => {
                                                     <a href="javascript:void(0)" role='button' aria-label='Home' onClick={() => goToCart()} >
                                                         <img alt="Cart" src={require("../../assets/img/shopping-bag.png")} />
                                                     </a>
-                                                    <div className="badge">{cartCount}</div>
+                                                    <div className="badge"><div>{cartCount}</div></div>
                                                 </li>
 
                                             </ul>
@@ -110,10 +110,10 @@ const Header = (props) => {
                     </div>
                     <nav role='navigation' aria-label='Mobile Menu'>
                         <ul>
-                            <li><a href="javascript:void(0)" onClick={() => navigate("/")} role='button' aria-label='Home'>Home</a></li>
-                            <li><a href="javascript:void(0)" onClick={() => navigate("/productcategory/women'snnclothing")} role='button' aria-label='Women'>Women</a></li>
-                            <li><a href="javascript:void(0)" onClick={() => navigate("/productcategory/men'snnclothing")} role='button' aria-label='Men'>Men</a></li>
-                            <li><a href="javascript:void(0)" onClick={() => navigate("/productcategory/electronics")} role='button' aria-label='Electronics'>Electronics</a></li>
+                            <li><a href="javascript:void(0)" onClick={() => {navigate("/");closeNav()}} role='button' aria-label='Home'>Home</a></li>
+                            <li><a href="javascript:void(0)" onClick={() => {navigate("/productcategory/women'snnclothing");closeNav()}} role='button' aria-label='Women'>Women</a></li>
+                            <li><a href="javascript:void(0)" onClick={() => {navigate("/productcategory/men'snnclothing");closeNav()}} role='button' aria-label='Men'>Men</a></li>
+                            <li><a href="javascript:void(0)" onClick={() => {navigate("/productcategory/electronics");closeNav()}} role='button' aria-label='Electronics'>Electronics</a></li>
 
 
                             <li><a href="javascript:void(0)" onClick={() => navigate("/productcategory/jewelery")} role='button' aria-label='Jewellery'>Jewellery</a></li>

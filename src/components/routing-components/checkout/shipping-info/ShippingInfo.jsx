@@ -18,7 +18,7 @@ const ShippingInfo = (props) => {
     const [address1, setAddress1] = useState(selectedProducts.shippingInfo.address1);
     const [address2, setAddress2] = useState(selectedProducts.shippingInfo.address2);
     const [city, setCity] = useState(selectedProducts.shippingInfo.city);
-    const [state1, setState1] = useState(selectedProducts.shippingInfo.state1);
+    const [state1, setState1] = useState(selectedProducts.shippingInfo.state);
     const [zip, setZip] = useState(selectedProducts.shippingInfo.zip);
 
     const dispatch = useDispatch();
@@ -91,7 +91,7 @@ const ShippingInfo = (props) => {
 
                                 <div className="aem-Grid aem-Grid--12">
                                     <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--6 aem-GridColumn--phone--12">
-                                        <Select defaultOption={{ label: "Country", value: "" }} options={[{ value: "USA", label: "USA" }]} id={"country"} label={"Country"} setValue={setCountry} />
+                                        <Select defaultValueSelected={country} defaultOption={{ label: "Country", value: "" }} options={[{ value: "USA", label: "USA" }]} id={"country"} label={"Country"} setValue={setCountry} />
 
                                     </div>
                                 </div>
@@ -129,7 +129,9 @@ const ShippingInfo = (props) => {
 
                                 <div className="aem-Grid aem-Grid--12">
                                     <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--6 aem-GridColumn--phone--6">
-                                        <Select defaultOption={{ label: "State", value: "" }} options={[{ label: "Washington, D.C.", value: "Washington, D.C." }]} id={"state"} label={"State"} setValue={setState1} />
+
+
+                                        <Select defaultValueSelected={state1}  defaultOption={{ label: "State", value: "" }} options={[{ label: "Washington, D.C.", value: "Washington, D.C." }]} id={"state"} label={"State"} setValue={setState1} />
 
                                     </div>
 

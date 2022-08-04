@@ -6,7 +6,7 @@ Added Products=====
 }
 
 .productcontainer .image-container img {
-  width: -webkit-fill-available;
+  width: 166px;
   height: 199px;
 }
 
@@ -95,11 +95,19 @@ Added Products=====
   .quntity-section {
     margin-top: 0px !important;
   }
+  .productcontainer .image-container img {
+    width: 100px;
+    height: 120px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
   .quntity-section {
     margin-top: 0px !important;
+  }
+  .productcontainer .image-container img {
+    width: 100px;
+    height: 120px;
   }
 }
 

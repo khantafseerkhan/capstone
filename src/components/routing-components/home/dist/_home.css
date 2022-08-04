@@ -41,12 +41,12 @@
 }
 
 .top-banner .phone-details-section {
-  padding: 16px;
+  padding: 10px;
   position: relative;
   z-index: 1;
   margin-top: 289px;
   background: transparent linear-gradient(181deg, #F1F1F100 0%, #F0F0F0 100%) 0% 0% no-repeat padding-box;
-  height: 332px;
+  height: 360px;
 }
 
 .top-banner .phone-details-section .dot {
@@ -150,13 +150,11 @@
   height: 450px;
   background-position: initial;
   background-repeat: no-repeat;
-  background-size: 454px 789px;
-  background-color: red;
-  background-position-y: -70px;
+  background-size: cover;
 }
 
 .banner2-section .text-section {
-  padding: 50px;
+  padding: 25px;
 }
 
 .banner2-section .text-section .title {
@@ -325,10 +323,12 @@
 
 .banner1-bg-img {
   background-image: url(../assets/img/bannerimg_1.png);
-  background-size: 836px 1460px;
+  background-size: cover;
   height: 650px;
   background-repeat: no-repeat;
-  background-position-y: -240px;
+  /* background-position-y: -152px; */
+  /* background-position-x: -102px; */
+  background-position: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -364,13 +364,6 @@
     margin-top: -80px;
     position: relative;
   }
-  .top-banner .banner1-bg-img {
-    background-size: 895px 950px;
-    height: 650px;
-    background-repeat: no-repeat;
-    background-position-y: -169px;
-    background-position-x: -126px;
-  }
   .product-category-card-container {
     margin-top: -46px;
     margin-bottom: 80px;
@@ -382,18 +375,13 @@
     height: 267px;
   }
   .banner2-bg-img {
-    background-size: 100% 740px !important;
+    height: 312px !important;
+    background-size: 100% 483px !important;
+    background-position-y: -51px !important;
   }
 }
 
 @media screen and (max-width: 1200px) and (min-width: 768px) {
-  .top-banner .banner1-bg-img {
-    background-size: 1310px 870px;
-    height: 650px;
-    background-repeat: no-repeat;
-    background-position-y: -152px;
-    background-position-x: -102px;
-  }
   .product-category-card-container {
     margin-top: -46px;
     margin-bottom: 80px;
@@ -402,12 +390,6 @@
   }
   .image-section img {
     height: auto !important;
-  }
-  .banner2-section {
-    text-align: center !important;
-  }
-  .banner2-section hr {
-    text-align: center;
   }
   .banner3-section .img-marker {
     margin-top: -45px;
@@ -426,7 +408,6 @@
     height: 210px;
     margin-top: -80px;
     position: relative;
-    padding: 50px;
   }
   .product-category-card-container {
     width: 343px;
@@ -435,9 +416,6 @@
   .product-category-card-container img {
     width: 343px;
     height: 267px;
-  }
-  .banner2-bg-img {
-    background-size: 100% 740px !important;
   }
 }
 

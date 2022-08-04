@@ -1,0 +1,84 @@
+/*
+Descriptioin cssss
+
+
+*/
+.product-description-head {
+  text-align: left;
+  font: normal normal 600 36px/45px Source Serif Pro;
+  letter-spacing: 0px;
+  color: #172026;
+  padding: 20px;
+  line-height: 45px;
+}
+
+.product-description-section {
+  padding: 20px;
+}
+
+.product-description-section .title {
+  text-align: left;
+  font: normal normal 600 20px/25px Muli;
+  letter-spacing: 0px;
+  color: #172026;
+}
+
+.product-description-section .description {
+  text-align: left;
+  font: normal normal normal 16px/24px Muli;
+  letter-spacing: 0px;
+  color: #172026;
+  margin-top: 15px;
+  line-height: 24px;
+}
+
+.product-description-section hr {
+  width: 102px;
+  height: 8px;
+  background: #E26A2C 0% 0% no-repeat padding-box;
+  opacity: 1;
+  margin-top: 20px;
+  float: left;
+}
+
+.product-details-section {
+  padding: 20px;
+}
+
+.product-details-section .title {
+  text-align: left;
+  font: normal normal 600 20px/25px Muli;
+  letter-spacing: 0px;
+  color: #172026;
+}
+
+.product-details-section .description {
+  text-align: left;
+  font: normal normal 600 16px/20px Muli;
+  letter-spacing: 0px;
+  color: #172026;
+  margin-top: 15px;
+}
+
+.product-details-section .description .containt-grid {
+  display: flex;
+}
+
+.product-details-section .description .containt-grid div {
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .product-description-section hr {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .product-description-section hr {
+    float: inherit;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=_description.css.map */
