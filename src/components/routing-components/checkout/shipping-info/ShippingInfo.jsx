@@ -163,7 +163,7 @@ const ShippingInfo = (props) => {
 
                 {
                     props.details == true && (
-                        <div className="aem-Grid aem-Grid--12 align-to-left saved-details-section">
+                        <div className="aem-Grid aem-Grid--12 align-to-left saved-details-section top-margin-10">
                             <div className="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 padding10">
 
                                 <div className="subhead">

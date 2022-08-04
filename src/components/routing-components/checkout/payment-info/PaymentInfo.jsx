@@ -46,7 +46,7 @@ const Paymentinfo = (props) => {
     return (
         <>
 
-                    <div className="aem-Grid aem-Grid--12 align-to-left form-section bottom-margin-10">
+                    <div className="aem-Grid aem-Grid--12 align-to-left form-section">
 
 
 

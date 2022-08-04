@@ -719,7 +719,28 @@
   background-position: center;
 }
 
+@media screen and (max-width: 320px) {
+  .phone-details-section {
+    padding: 0px;
+  }
+  .phone-details-section .title {
+    line-height: 45px !important;
+  }
+  .phone-details-section .btn-section {
+    margin-top: 8px !important;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  .phone-details-section {
+    padding: 10px;
+  }
+  .phone-details-section .title {
+    line-height: 45px !important;
+  }
+  .phone-details-section .btn-section {
+    margin-top: 8px !important;
+  }
   .product-category-card-container {
     margin-top: 63px;
     width: 343px;
@@ -1503,6 +1524,14 @@ Summary  Details
   line-height: 24px;
 }
 
+.product-summary .productdetails-section .summary-section a {
+  text-align: left;
+  text-decoration: underline;
+  font: normal normal 600 16px/24px Muli;
+  letter-spacing: 0px;
+  line-height: 24px;
+}
+
 .product-summary .selection-section .color-section {
   padding: 5px;
 }
@@ -2055,7 +2084,6 @@ Price Summay css ===========================================
 
 .saved-details-section {
   height: 176px;
-  margin: 13px;
   /* UI Properties */
   border: 1px solid #D1D3D6;
   border-radius: 2px;
@@ -2133,7 +2161,6 @@ Price Summay css ===========================================
 }
 
 .saved-details-section {
-  margin: 13px;
   height: 176px;
   /* UI Properties */
   border: 1px solid #D1D3D6;

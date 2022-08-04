@@ -59,7 +59,7 @@ Summary  Details
             label {
                 text-decoration: underline;
                 font: normal normal 600 14px/24px Muli;
-         letter-spacing: 0px;
+                letter-spacing: 0px;
                 color: #172026;
                 margin-top: 3px;
                 line-height: 24px;
@@ -92,6 +92,14 @@ Summary  Details
             letter-spacing: 0px;
             padding: 5px;
             line-height: 24px;
+
+            a {
+                text-align: left;
+                text-decoration: underline;
+                font: normal normal 600 16px/24px Muli;
+                letter-spacing: 0px;
+                line-height: 24px;
+            }
 
         }
 

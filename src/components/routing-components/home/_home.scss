@@ -385,7 +385,37 @@
 }
 
 //===========for phone
+
+
+@media screen and (max-width: 320px) {
+
+    .phone-details-section {
+
+        padding: 0px;
+        .title{
+            line-height: 45px !important;
+
+        }
+
+        .btn-section{
+            margin-top: 8px !important;
+        }
+    }
+}
 @media screen and (max-width: 768px) {
+
+    .phone-details-section {
+
+        padding: 10px;
+        .title{
+            line-height: 45px !important;
+
+        }
+
+        .btn-section{
+            margin-top: 8px !important;
+        }
+    }
     .product-category-card-container {
         margin-top: 63px;
         width: 343px;
@@ -438,10 +468,6 @@
 
 
         }
-    }
-
-    .top-banner {
-        .banner1-bg-img {}
     }
 
 

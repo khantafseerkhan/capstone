@@ -6,14 +6,24 @@ import { addToCart } from "../../../../redux-management/actions/actions";
 
 const Summary = (props) => {
     //productdata
-   
-    
 
 
-  //  props.productdata.rating;
+    const [filterDescription, setFilterDescription] = useState(true);
+
+
+
+    //  props.productdata.rating;
     const dispatch = useDispatch();
     const [quantity, setQauntity] = useState(1);
 
+    const readmore = () => {
+        setFilterDescription(false);
+    };
+    const lessmore = () => {
+        setFilterDescription(true);
+    };
+
+    
 
 
     const incQuantity = () => {
@@ -61,38 +71,29 @@ const Summary = (props) => {
                                     <span ></span>
 
                                     <label>{232
-}</label>
+                                    }</label>
 
+                                </div>
+                                {props.productdata.description && (
+                                    <div className="summary-section">
+
+                                        {props.productdata.description.length > 150 ? (filterDescription == true ? props.productdata.description.substring(0, 150) : props.productdata.description) : props.productdata.description}
+
+                                        {props.productdata.description.length > 150 && filterDescription == true && (
+                                            <a href="javascript:void(0)" role='button' aria-label='Home' onClick={() => readmore()}>Read Me</a>
+                                        )}
+
+                                        {props.productdata.description.length > 150 && filterDescription == false && (
+                                            <a href="javascript:void(0)" role='button' aria-label='Home' onClick={() => lessmore()}>Less More</a>
+                                        )}
                                     </div>
-                                <div className="summary-section"> {props.productdata.description}</div>
+
+                                )}
 
                             </div>
 
                             <div className="selection-section ">
-                                {/* <div className="color-section">
-                                    <div className="title-section">Color</div>
-                                    <ul>
-                                        <li><button type="button" aria-label='color' style={{ backgroundColor: "black" }}></button></li>
-                                        <li><button type="button" aria-label='color' style={{ backgroundColor: "blue" }}></button></li>
-                                        <li><button type="button" aria-label='color' style={{ backgroundColor: "green" }}></button></li>
-                                        <li><button type="button" aria-label='color' style={{ backgroundColor: "red" }}></button></li>
 
-                                    </ul>
-                                </div>
-
-                                <div className="size-section ">
-                                    <div className="title-section">Size</div>
-
-                                    <ul>
-                                        <li><button type="button" aria-label='XS Size'>XS</button></li>
-                                        <li><button type="button" aria-label='S Size'>S</button></li>
-                                        <li><button type="button" aria-label='M Size'>M</button></li>
-                                        <li><button type="button" aria-label='L Size'>L</button></li>
-                                        <li><button type="button" aria-label='XL Size'>XL</button></li>
-
-
-                                    </ul>
-                                </div> */}
 
                                 <div className="quntity-section">
                                     {/* <div className="title-section">Quantity</div> */}
