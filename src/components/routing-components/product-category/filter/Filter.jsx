@@ -169,6 +169,11 @@ const Filter = (props) => {
         setColors(color);
         setOptionsArray(options)
 
+
+        if(id!=''){
+            document.getElementById(id).checked=true;
+            document.getElementById(id+"_mob").checked=true;
+        }
     }, [])
 
     const showResults = () => {
