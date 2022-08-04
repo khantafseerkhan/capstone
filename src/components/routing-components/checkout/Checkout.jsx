@@ -26,7 +26,8 @@ const Checkout = (props) => {
     let cartData = useSelector(state => state.updateCartProduct.cartProduct);
 
     const placeOrder=()=>{
-        navigate("/orderSuccess")
+        alert("come ")
+        navigate("/orderSuccess");
     }
     return (
         <div className="aem-Grid aem-Grid--12">

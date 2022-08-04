@@ -1,18 +1,22 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { decQuantity, incQuantity, removeProduct } from "../../../../redux-management/actions/actions";
 
-const Addedproduct=()=>{
+const Addedproduct=(props)=>{
 
     const dispatch = useDispatch();
-  //  const [selectedProducts, setSelectedProducts] = useState([]);
-    let selectedProducts = useSelector(state => state.updateCartProduct.cartProduct);
+  const [selectedProducts, setSelectedProducts] = useState([]);
+   let selectedProduct = useSelector(state => state.updateCartProduct.cartProduct);
 
 
     useEffect(() => {
-     //   setSelectedProducts(productData);
+       setSelectedProducts(selectedProduct);
 
     }, [])
+
+    useEffect(() => {
+ 
+     }, [selectedProducts])
     const quantInc=(element,index)=>{
 
         dispatch(incQuantity(element.id))
@@ -35,13 +39,15 @@ const Addedproduct=()=>{
 
 
     const removeproduct=(index)=>{
-        let tempcart=selectedProducts;
+        let tempcart=[...selectedProducts];
 
         tempcart.splice(index,1)
         dispatch(removeProduct(index));
+        console.log(selectedProducts)
 
-     //   setSelectedProducts(tempcart);
+        setSelectedProducts(tempcart);
 
+        props.setProductlist(tempcart)
 
 
 
@@ -71,8 +77,16 @@ const Addedproduct=()=>{
 
                                 </div>
                             <div className="sub-section">
-                                <span>size :</span><span>XL</span><br />
-                                <span>color :</span><span>Red</span><br />
+
+                            {(element.category == "women's clothing" || element.category == "men's clothing") && (
+                                                     <>
+                                                      <span>size :</span><span>XL</span><br />
+                                                      <span>color :</span><span>Red</span><br />      
+                                                        
+                                                     </>
+
+                                                     )}
+                               
                                 <span>&#36; {element.price*element.quantity}</span>
                                </div>
 
@@ -104,7 +118,7 @@ const Addedproduct=()=>{
                     </li>
 
                     <li>
-                        <a role='button' aria-label='Remove' href="javascript:void(0)" ><img  src={require("../../../../assets/img/trash-2.png")}  alt="Remove"/> <span>Remove</span></a>
+                        <a role='button' aria-label='Remove' href="javascript:void(0)" onClick={()=>removeproduct(index)}><img  src={require("../../../../assets/img/trash-2.png")}  alt="Remove"/> <span>Remove</span></a>
                     </li>
 
 

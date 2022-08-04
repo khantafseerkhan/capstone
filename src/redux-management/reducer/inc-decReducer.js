@@ -128,8 +128,8 @@ export const updateCartProduct = (state = initialstate, action) => {
 
       temparray.splice(action.data, 1);
 
-      localStorage.setItem("cartdata", JSON.stringify(temparray))
-      localStorage.setItem("totalofall", calPriceSummary(temparray))
+     // localStorage.setItem("cartdata", JSON.stringify(temparray))
+     // localStorage.setItem("totalofall", calPriceSummary(temparray))
 
       return {
         value: state.value,

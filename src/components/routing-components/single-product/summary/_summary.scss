@@ -100,6 +100,8 @@ Summary  Details
                 font: normal normal 600 16px/24px Muli;
                 letter-spacing: 0px;
                 line-height: 24px;
+                color: #172026;
+                padding-left: 10px;
             }
 
         }
@@ -128,23 +130,29 @@ Summary  Details
                 margin-left: -34px;
 
                 li {
-                    padding: 5px;
-                    display: unset;
+                    display: inline-flex;
+                    font: normal normal 600 16px/20px Muli;
+                    border: 1px solid #91959C;
+                    width: 64px;
+                    height: 40px;
+                    background: none;
+                    border-radius: 6px;
+                    margin: 5px;
+                    justify-content: center;
+                    align-items: center;
+                    // button {
+                    //     text-align: center;
+                    //     font: normal normal 600 16px/20px Muli;
+                    //     letter-spacing: 0.32px;
 
-                    button {
-                        text-align: center;
-                        font: normal normal 600 16px/20px Muli;
-                        letter-spacing: 0.32px;
-                        color: #545D63;
 
-                        border: 1px solid #91959C;
-                        border-radius: 6px;
-                        width: 63px;
-                        height: 31px;
-                        width: 64px;
-                        height: 40px;
-                        background: none;
-                    }
+                    //     border-radius: 6px;
+                    //     width: 63px;
+                    //     height: 31px;
+                    //     width: 64px;
+                    //     height: 40px;
+                    //     background: none;
+                    // }
                 }
             }
         }
@@ -165,25 +173,17 @@ Summary  Details
                 margin-left: -34px;
 
                 li {
-                    padding: 5px;
-
-                    display: unset;
-
-                    button {
-                        text-align: center;
-                        font: normal normal 600 16px/20px Muli;
-                        letter-spacing: 0.32px;
-                        color: #545D63;
-
-                        border: 1px solid #91959C;
-                        border-radius: 6px;
-                        width: 63px;
-                        height: 31px;
-                        width: 64px;
-                        height: 40px;
-                        background: none;
-                        margin-top: 8px;
-                    }
+                    display: inline-flex;
+                    font: normal normal 600 16px/20px Muli;
+                    border: 1px solid #91959C;
+                    width: 64px;
+                    height: 40px;
+                    background: none;
+                    border-radius: 6px;
+                    margin: 5px;
+                    justify-content: center;
+                    justify-content: center;
+                    align-items: center;
                 }
             }
         }
@@ -256,8 +256,6 @@ Summary  Details
             text-transform: uppercase;
         }
 
-        img {}
-
 
         div {
             width: 100%;
@@ -314,4 +312,9 @@ Summary  Details
 
         text-align: center !important;
     }
+}
+
+
+.activesection{
+    border: 2px solid #E26A2C !important;
 }

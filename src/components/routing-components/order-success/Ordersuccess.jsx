@@ -107,8 +107,12 @@ const Ordersuccess = (props) => {
                                                 <div className="aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--tablet--9 aem-GridColumn--phone--9 detail-container">
                                                     <ul>
                                                         <li>{element.title}</li>
-                                                        <li>Size<span>:</span>{element.size}</li>
-                                                        <li>Color<span>:</span>{element.color}</li>
+                                                        {(element.category == "women's clothing" || element.category == "men's clothing") && (
+                                                            <>
+                                                                <li>Size<span>:</span>{element.size.name}</li>
+                                                                <li>Color<span>:</span>{element.color.name}</li>
+                                                            </>
+                                                        )}
                                                         <li>Quantity<span>:</span>{element.quantity}</li>
 
                                                     </ul>

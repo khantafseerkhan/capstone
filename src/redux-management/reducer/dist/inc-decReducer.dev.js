@@ -128,10 +128,10 @@ var updateCartProduct = function updateCartProduct() {
     var _temparray = state.cartProduct;
 
     if (action.data != -1) {
-      _temparray.splice(action.data, 1);
+      _temparray.splice(action.data, 1); // localStorage.setItem("cartdata", JSON.stringify(temparray))
+      // localStorage.setItem("totalofall", calPriceSummary(temparray))
 
-      localStorage.setItem("cartdata", JSON.stringify(_temparray));
-      localStorage.setItem("totalofall", calPriceSummary(_temparray));
+
       return {
         value: state.value,
         allproductdata: state.allproductdata,

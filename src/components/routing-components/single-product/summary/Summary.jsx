@@ -15,6 +15,8 @@ const Summary = (props) => {
     //  props.productdata.rating;
     const dispatch = useDispatch();
     const [quantity, setQauntity] = useState(1);
+    const [colorinfo,setColorinfo]=useState({})
+    const [sizeinfo,setSizeinfo]=useState({})
 
     const readmore = () => {
         setFilterDescription(false);
@@ -23,7 +25,7 @@ const Summary = (props) => {
         setFilterDescription(true);
     };
 
-    
+
 
 
     const incQuantity = () => {
@@ -37,6 +39,35 @@ const Summary = (props) => {
 
         }
     }
+
+    const active=(e,name,value,type)=>{
+
+        let siblings=e.target.parentElement.children;
+        console.log(siblings)
+        for(let i=0;i<siblings.length;i++){
+
+            siblings[i].classList.remove('activesection');
+        }
+
+        e.target.classList.add('activesection');
+
+        if(type=="color"){
+            setColorinfo({
+                name:name,
+                value:value
+            })
+        }else if(type=="size"){
+            setSizeinfo({
+                name:name,
+                value:value
+            })
+        }
+
+        // siblings.forEach(element=>
+        // {element.style.backgroundColor="red";}
+
+        //     )
+    }
     const AddProduct = (inputdata) => {
         // const productData = useSelector(state => state.updateCartProduct);
         let obj = {
@@ -47,7 +78,9 @@ const Summary = (props) => {
             rating: inputdata.rating,
             category: inputdata.category,
             image: inputdata.image,
-            quantity: quantity
+            quantity: quantity,
+            color:colorinfo,
+            size:sizeinfo
         }
         dispatch(addToCart(obj));
     }
@@ -93,6 +126,40 @@ const Summary = (props) => {
                             </div>
 
                             <div className="selection-section ">
+
+                                {(props.productdata.category == "women's clothing" || props.productdata.category == "men's clothing") &&
+                                    (
+                                        <>
+
+                                            <div className="color-section">
+                                                <div className="title-section">Color</div>
+                                                <ul>
+                                                    <li role="button" aria-label='color' style={{ backgroundColor: "#847575" }} onClick={(e)=>active(e,"Sonic Silver","847575","color")}></li>
+                                                    <li  role="button" aria-label='color' style={{ backgroundColor: "#36aea3" }} onClick={(e)=>active(e,"Robin Egg Blue","36aea3","color")}></li>
+                                                    <li  role="button" aria-label='color' style={{ backgroundColor: "#dbd931" }} onClick={(e)=>active(e,"Pear","dbd931","color")}></li>
+                                                    <li  role="button" aria-label='color' style={{ backgroundColor: "#e800005e" }} onClick={(e)=>active(e,"Red","e800005e","color")}></li>
+
+                                                </ul>
+                                            </div>
+
+
+                                            <div className="size-section">
+                                                <div className="title-section">Size</div>
+
+                                                <ul>
+                                                    <li role="button" aria-label='XS Size' onClick={(e)=>active(e,"XS","XS","size")}>XS</li>
+                                                    <li role="button" aria-label='S Size' onClick={(e)=>active(e,"S","S","size")}>S</li>
+                                                    <li role="button" aria-label='M Size' onClick={(e)=>active(e,"L","L","size")}>L</li>
+                                                    <li role="button" aria-label='XL Size' onClick={(e)=>active(e,"XL","XL","size")}>XL</li>
+
+
+                                                </ul>
+                                            </div>
+                                        </>)
+
+
+                                }
+
 
 
                                 <div className="quntity-section">
