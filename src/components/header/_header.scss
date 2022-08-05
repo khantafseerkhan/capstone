@@ -38,7 +38,7 @@
             li {
                 height: 30px;
                 color: white;
-
+                height: 38px;
                 a {
                     text-align: left;
                     font: normal normal 600 16px/24px Muli;
@@ -53,6 +53,10 @@
             }
         }
 
+    }
+
+    .activenav-menu{
+       border-bottom: 4px solid #FFD07F
     }
 
 

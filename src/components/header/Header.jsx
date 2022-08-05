@@ -35,6 +35,18 @@ const Header = (props) => {
         navigate("/shoppingcart")
     }
 
+    const activesection = (e) => {
+        let el = e.target;
+        let siblings = el.parentElement.parentElement.children;
+        for (let i = 0; i < siblings.length; i++) {
+            siblings[i].classList.remove("activenav-menu");
+        }
+
+        el.parentElement.classList.add("activenav-menu");
+
+
+    }
+
     return (
         <>
 
@@ -61,13 +73,13 @@ const Header = (props) => {
                                 <div className="aem-GridColumn aem-GridColumn--default--6 tab-hide phone-hide">
                                     <nav className="menu">
                                         <ul>
-                                            <li><a href="javascript:void(0)" onClick={() => {navigate("/");closeNav();}} role='button' aria-label='Home'>Home</a></li>
-                                            <li><a href="javascript:void(0)" onClick={() => {navigate("/productcategory/women'snnclothing");closeNav();}} role='button' aria-label='Women'>Women</a></li>
-                                            <li><a href="javascript:void(0)" onClick={() =>{ navigate("/productcategory/men'snnclothing");closeNav();}} role='button' aria-label='Men'>Men</a></li>
-                                            <li><a href="javascript:void(0)" onClick={() => {navigate("/productcategory/electronics");closeNav();}} role='button' aria-label='Electronics'>Electronics</a></li>
+                                            <li><a href="javascript:void(0)" onClick={(e) => { activesection(e);closeNav(); navigate("/"); }} role='button' aria-label='Home'>Home</a></li>
+                                            <li><a href="javascript:void(0)" onClick={(e) => { activesection(e);closeNav(); navigate("/productcategory/women's clothing"); closeNav(); }} role='button' aria-label='Women'>Women</a></li>
+                                            <li><a href="javascript:void(0)" onClick={(e) => { activesection(e);closeNav(); navigate("/productcategory/men's clothing"); closeNav(); }} role='button' aria-label='Men'>Men</a></li>
+                                            <li><a href="javascript:void(0)" onClick={(e) => { activesection(e);closeNav(); navigate("/productcategory/electronics"); closeNav(); }} role='button' aria-label='Electronics'>Electronics</a></li>
 
 
-                                            <li><a href="javascript:void(0)" onClick={() => navigate("/productcategory/jewelery")} role='button' aria-label='Jewellery'>Jewellery</a></li>
+                                            <li><a href="javascript:void(0)" onClick={(e) => { activesection(e); closeNav();navigate("/productcategory/jewelery") }} role='button' aria-label='Jewellery'>Jewellery</a></li>
 
                                         </ul>
                                     </nav>
@@ -110,13 +122,13 @@ const Header = (props) => {
                     </div>
                     <nav role='navigation' aria-label='Mobile Menu'>
                         <ul>
-                            <li><a href="javascript:void(0)" onClick={() => {navigate("/");closeNav()}} role='button' aria-label='Home'>Home</a></li>
-                            <li><a href="javascript:void(0)" onClick={() => {navigate("/productcategory/women'snnclothing");closeNav()}} role='button' aria-label='Women'>Women</a></li>
-                            <li><a href="javascript:void(0)" onClick={() => {navigate("/productcategory/men'snnclothing");closeNav()}} role='button' aria-label='Men'>Men</a></li>
-                            <li><a href="javascript:void(0)" onClick={() => {navigate("/productcategory/electronics");closeNav()}} role='button' aria-label='Electronics'>Electronics</a></li>
+                            <li><a href="javascript:void(0)" onClick={(e) => {activesection(e); closeNav();navigate("/");  }} role='button' aria-label='Home'>Home</a></li>
+                            <li><a href="javascript:void(0)" onClick={(e) => {activesection(e); closeNav();navigate("/productcategory/women'snnclothing"); closeNav() }} role='button' aria-label='Women'>Women</a></li>
+                            <li><a href="javascript:void(0)" onClick={(e) => { activesection(e);closeNav();navigate("/productcategory/men'snnclothing"); closeNav() }} role='button' aria-label='Men'>Men</a></li>
+                            <li><a href="javascript:void(0)" onClick={(e) => {activesection(e); closeNav();navigate("/productcategory/electronics"); closeNav() }} role='button' aria-label='Electronics'>Electronics</a></li>
 
 
-                            <li><a href="javascript:void(0)" onClick={() => navigate("/productcategory/jewelery")} role='button' aria-label='Jewellery'>Jewellery</a></li>
+                            <li><a href="javascript:void(0)" onClick={(e) =>{activesection(e); closeNav();navigate("/productcategory/jewelery")}} role='button' aria-label='Jewellery'>Jewellery</a></li>
 
                         </ul>
                     </nav>

@@ -41,6 +41,7 @@
 .app-header .menu ul li {
   height: 30px;
   color: white;
+  height: 38px;
 }
 
 .app-header .menu ul li a {
@@ -51,6 +52,10 @@
   padding: 10px;
   text-decoration: none;
   color: white;
+}
+
+.app-header .activenav-menu {
+  border-bottom: 4px solid #FFD07F;
 }
 
 .app-header .right-nav ul {

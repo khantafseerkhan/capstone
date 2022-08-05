@@ -12,13 +12,13 @@ export let homeData={
             img:"https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg",
             title:"Shop Women",
             subtitle:"Lorem ipsum dolor sit amet",
-            category:"women'snnclothing"
+            category:"women's clothing"
 
         },{
             img:"https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
             title:"Shop Men",
             subtitle:"Lorem ipsum dolor sit amet",
-            category:"men'snnclothing"
+            category:"men's clothing"
 
         },{
             img:"https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",

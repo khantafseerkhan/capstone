@@ -7,13 +7,8 @@ const filterBy = [];
 
 const Filter = (props) => {
 
-    let id = useParams().id;
-    if (!id) {
-        id = "";
-        
-    } else {
-        id = id.replace("nn", " ");
-    }
+    const {id} = useParams();
+    
     const filterList = [
         {
             type: "Categories",
@@ -170,11 +165,22 @@ const Filter = (props) => {
         setOptionsArray(options)
 
 
-        if(id!=''){
+       
+    }, [])
+    let [precheck,setPrecheck]=useState("");
+    useEffect(()=>{
+        if(id){
+            console.log("precheck   "+precheck)
+            if(precheck!=""){
+                document.getElementById(precheck).checked=false;
+            document.getElementById(precheck+"_mob").checked=false;
+            }
             document.getElementById(id).checked=true;
             document.getElementById(id+"_mob").checked=true;
+            setPrecheck(id);
         }
-    }, [])
+        
+    },[id])
 
     const showResults = () => {
         closeNav();

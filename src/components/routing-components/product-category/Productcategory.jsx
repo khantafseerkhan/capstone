@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import { getservice } from "../../../assets/apiservice/customservice";
 import { activeloader, GetSortOrder, hasClass } from "../../../assets/customjs/custom";
 import Pagination from "../../paginations/pagination";
@@ -10,37 +10,35 @@ import Product from "./product/Product";
 let PageSize = 5;
 
 const ProductCategory = () => {
+    let location = useLocation();
 
 
     const [productDetails, setProductDetails] = useState([]);
     const [filteredData, setFilteredData] = useState([]);
-
+    
     const [currentPage, setCurrentPage] = useState(1);
     const [totalcount, setTotalcount] = useState(0);
+    const [param,setParam]=useState()
     useMemo(() => {
         const firstPageIndex = (currentPage - 1) * PageSize;
         const lastPageIndex = firstPageIndex + PageSize;
-
+        
         setFilteredData(productDetails.slice(firstPageIndex, lastPageIndex));
         //return productDetails.slice(firstPageIndex, lastPageIndex);
 
 
     }, [currentPage]);
 
-    // console.log("param    "+useParams().id);
-    let id = useParams().id;
-    if (!id) {
-        id = "";
-    } else {
-        id = id.replace("nn", " ");
-    }
+    const {id}=useParams();
 
 
     useEffect(() => {
 
+
+
         // this.props.updateproductslist(['1']);
         //  try { activeloader() } catch (e) { }
-        getFilteredDetails(id);
+        getFilteredDetails([id]);
 
 
 
@@ -49,7 +47,18 @@ const ProductCategory = () => {
     useEffect(() => {
 
         multipleFilters([id]);
+        
     }, [productDetails])
+
+    useEffect(()=>{
+ 
+        console.log(id)
+        multipleFilters([id]);
+
+    },[id])
+
+
+    
 
 
 
@@ -86,7 +95,7 @@ const ProductCategory = () => {
     }
 
     const multipleFilters = (filterBy) => {
-        console.log(filterBy)
+        console.log("filterBy"+filterBy[0]);
         let categoryData = productDetails;
         if (filterBy.length > 0 && filterBy[0] != '') {
             if (filterBy.length == 1) {
