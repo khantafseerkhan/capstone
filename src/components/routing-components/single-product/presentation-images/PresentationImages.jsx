@@ -1,21 +1,41 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const PresentationImages = (props) => {
 
 
+  const [activeimg,setActiveimg]=useState();
+
   let slideIndex = 1;
+
+  let productImages=[];
+  for(let i=0;i<6;i++){
+    productImages.push(props.propductimg)
+  }
 
   useEffect(() => {
 
     showSlides(slideIndex);
+    console.log(props.propductimg)
+    setActiveimg(productImages[0]);
+
+    console.log("activeimg   "+activeimg)
 
   }, [])
+
+
+  const changeactiveimg=(img)=>{
+    setActiveimg(img);
+
+  }
 
   const plusSlides = (n) => {
     showSlides(slideIndex += n);
   }
 
-  const currentSlide = (n) => {
+
+  const currentSlide1 = (n) => {
+   // alert("come into")
+
     showSlides(slideIndex = n);
   }
 
@@ -50,7 +70,7 @@ const PresentationImages = (props) => {
     let el=e.target;
     let siblings=el.parentElement.parentElement.children
 
-    for(let i=0;i<5;i++){
+    for(let i=0;i<siblings.length;i++){
       siblings[i].classList.remove('active-border');
 
     }
@@ -59,7 +79,6 @@ const PresentationImages = (props) => {
 
 
   return (
-
     <>
       <div className="aem-Grid aem-Grid--12 tab-hide phone-hide">
         {/* filter section */}
@@ -73,13 +92,16 @@ const PresentationImages = (props) => {
           <div className="img-menu" id="img-menu">
             <ul>
 
-              <li role="button" onClick={(e)=>activeli(e)}><img src={props.propductimg} alt="item" /> </li>
 
-              <li role="button"  onClick={(e)=>activeli(e)}><img src={props.propductimg} alt="item" /> </li>
-              <li role="button"  onClick={(e)=>activeli(e)}><img src={props.propductimg} alt="item" /> </li>
-              <li role="button"  onClick={(e)=>activeli(e)}><img src={props.propductimg} alt="item" /> </li>
+              {
+                productImages.map((element,index)=>{
+                  return(
+                    <li role="button" onClick={(e)=>{activeli(e);changeactiveimg(element)}}><img src={element} alt="item" /> </li>
 
-              <li role="button"  onClick={(e)=>activeli(e)}><img src={props.propductimg} alt="item" /> </li>
+                  )
+
+                })
+              }
 
             </ul>
           </div>
@@ -95,7 +117,7 @@ const PresentationImages = (props) => {
         </div>
 
         <div className="aem-GridColumn aem-GridColumn--default--8 activeImage">
-          <img src={props.propductimg} alt="item" />
+          <img src={activeimg && activeimg!="" ?activeimg:props.propductimg} alt="item" />
         </div>
       </div>
 
@@ -104,33 +126,36 @@ const PresentationImages = (props) => {
 
           <div className="slideshow-container ">
 
-            <div className="mySlides fade center-box">
-              <div className="numbertext">1 / 3</div>
-              <img src={props.propductimg}  alt="item" />
-            </div>
+          {
+                productImages.map((element,index)=>{
+                  return(
+                    <div className="mySlides fade center-box">
+                    <div className="numbertext">{index+1+" /"+ productImages.length}</div>
+                    <img src={props.propductimg}  alt="item" />
+                  </div>
+                  )
 
-            <div className="mySlides fade center-box">
-              <div className="numbertext">2 / 3</div>
-              <img src={props.propductimg}  alt="item" />
-            </div>
-
-            <div className="mySlides fade center-box">
-              <div className="numbertext">3 / 3</div>
-              <img src={props.propductimg}  alt="item" />
-            </div>
-
-
-
-            <a role='button' aria-label='Left' href="javascript:void(0)" className="prev" onclick={() => plusSlides(-1)} >❮</a>
-            <a role='button' aria-label='Right' href="javascript:void(0)" className="next" onclick={() => plusSlides(1)}>❯</a>
+                })
+              }
+            
+            <a role='button' aria-label='Left' href="javascript:void(0)" className="prev" onClick={() => plusSlides(-1)} >❮</a>
+            <a role='button' aria-label='Right' href="javascript:void(0)" className="next" onClick={() => plusSlides(1)}>❯</a>
 
           </div>
           <br />
 
           <div style={{ textAlign: "center" }}>
-            <span className="dot" onclick={() => currentSlide(1)}></span>
-            <span className="dot" onclick={() => currentSlide(2)}></span>
-            <span className="dot" onclick={() => currentSlide(3)}></span>
+          
+          {
+                productImages.map((element,index)=>{
+                  return(
+                    <span className="dot" onClick={() => currentSlide1(index+1)}></span>
+                    )
+
+                })
+              }
+          
+            
           </div>
         </div>
 

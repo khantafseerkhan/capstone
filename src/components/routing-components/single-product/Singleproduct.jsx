@@ -57,8 +57,10 @@ const SingleProduct = () => {
                 <div className="aem-Grid aem-Grid--12 ">
                     {/* filter section */}
                     <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 align-to-left">
-                        <PresentationImages propductimg={singleProductdata.image} />
-                    </div>
+                        {singleProductdata &&
+                          ( <PresentationImages propductimg={singleProductdata.image} />
+                          )  
+                         }  </div>
 
 
                     {/* products section */}
