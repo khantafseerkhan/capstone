@@ -1,6 +1,7 @@
 .top-banner {
   background: #39373729;
   height: 650px;
+  margin-top: -10px;
 }
 
 .top-banner .detail-section {
@@ -154,7 +155,7 @@
 }
 
 .banner2-section .text-section {
-  padding: 25px;
+  padding: 70px;
 }
 
 .banner2-section .text-section .title {
@@ -344,6 +345,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .top-banner {
+    margin-top: 0px;
+  }
   .phone-details-section {
     padding: 10px;
   }
@@ -363,6 +367,9 @@
   }
   .banner2-section {
     text-align: center !important;
+  }
+  .banner2-section .text-section {
+    padding: 70px;
   }
   .banner2-section hr {
     text-align: center;
@@ -403,6 +410,9 @@
 }
 
 @media screen and (max-width: 1200px) and (min-width: 768px) {
+  .top-banner {
+    margin-top: 0px;
+  }
   .product-category-card-container {
     margin-top: -46px;
     margin-bottom: 80px;
@@ -411,6 +421,9 @@
   }
   .image-section img {
     height: auto !important;
+  }
+  .banner2-section .text-section {
+    padding: 25px;
   }
   .banner3-section .img-marker {
     margin-top: -45px;

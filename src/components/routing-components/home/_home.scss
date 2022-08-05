@@ -1,7 +1,7 @@
 .top-banner {
     background: #39373729;
     height: 650px;
-
+    margin-top: -10px;
 
 
     .detail-section {
@@ -177,7 +177,7 @@
 
     .text-section {
 
-        padding: 25px;
+        padding: 70px;
 
         .title {
             font: normal normal 600 48px/60px Source Serif Pro;
@@ -404,6 +404,9 @@
 }
 @media screen and (max-width: 768px) {
 
+    .top-banner {
+        margin-top: 0px;
+    }
     .phone-details-section {
 
         padding: 10px;
@@ -431,7 +434,9 @@
 
     .banner2-section {
         text-align: center !important;
-
+        .text-section{
+            padding: 70px;
+        }
         hr {
             text-align: center;
         }
@@ -499,7 +504,9 @@
 //=============for tablet
 
 @media screen and (max-width: 1200px) and (min-width: 768px) {
-    .top-banner {}
+    .top-banner {
+        margin-top: 0px;
+    }
 
 
 
@@ -518,7 +525,9 @@
     }
 
     .banner2-section {
-
+        .text-section{
+            padding: 25px;
+        }
         hr {
         }
     }

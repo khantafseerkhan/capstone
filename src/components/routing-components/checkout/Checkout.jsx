@@ -26,7 +26,6 @@ const Checkout = (props) => {
     let cartData = useSelector(state => state.updateCartProduct.cartProduct);
 
     const placeOrder=()=>{
-        alert("come ")
         navigate("/orderSuccess");
     }
     return (

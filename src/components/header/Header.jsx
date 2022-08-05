@@ -123,8 +123,8 @@ const Header = (props) => {
                     <nav role='navigation' aria-label='Mobile Menu'>
                         <ul>
                             <li><a href="javascript:void(0)" onClick={(e) => {activesection(e); closeNav();navigate("/");  }} role='button' aria-label='Home'>Home</a></li>
-                            <li><a href="javascript:void(0)" onClick={(e) => {activesection(e); closeNav();navigate("/productcategory/women'snnclothing"); closeNav() }} role='button' aria-label='Women'>Women</a></li>
-                            <li><a href="javascript:void(0)" onClick={(e) => { activesection(e);closeNav();navigate("/productcategory/men'snnclothing"); closeNav() }} role='button' aria-label='Men'>Men</a></li>
+                            <li><a href="javascript:void(0)" onClick={(e) => {activesection(e); closeNav();navigate("/productcategory/women's clothing"); closeNav() }} role='button' aria-label='Women'>Women</a></li>
+                            <li><a href="javascript:void(0)" onClick={(e) => { activesection(e);closeNav();navigate("/productcategory/men's clothing"); closeNav() }} role='button' aria-label='Men'>Men</a></li>
                             <li><a href="javascript:void(0)" onClick={(e) => {activesection(e); closeNav();navigate("/productcategory/electronics"); closeNav() }} role='button' aria-label='Electronics'>Electronics</a></li>
 
 

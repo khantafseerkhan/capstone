@@ -97,7 +97,9 @@ const ProductCategory = () => {
     const multipleFilters = (filterBy) => {
         console.log("filterBy"+filterBy[0]);
         let categoryData = productDetails;
-        if (filterBy.length > 0 && filterBy[0] != '') {
+       
+        if (filterBy.length > 0 && filterBy[0] != '' && filterBy[0] != undefined ) {
+            console.log("cinif")
             if (filterBy.length == 1) {
                 categoryData = categoryData.filter(x => (x.category == filterBy[0]));
             } else if (filterBy.length == 2) {
@@ -115,6 +117,7 @@ const ProductCategory = () => {
             }
 
         } else {
+            console.log("in els")
             categoryData = productDetails;
 
         }
