@@ -80,8 +80,8 @@ const Addedproduct=(props)=>{
 
                             {(element.category == "women's clothing" || element.category == "men's clothing") && (
                                                      <>
-                                                      <span>size :</span><span>XL</span><br />
-                                                      <span>color :</span><span>Red</span><br />      
+                                                      <span>size :</span><span>{element.size.name}</span><br />
+                                                      <span>color :</span><span>{element.color.name}</span><br />      
                                                         
                                                      </>
 

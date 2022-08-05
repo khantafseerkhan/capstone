@@ -47,7 +47,7 @@ const Pricesummary = (props) => {
                     </li>
 
                     <li className="total">
-                        <div>Order total</div><div> &#36; {pricesummary.subtotal-pricesummary.coupon-pricesummary.giftCard+pricesummary.shippingCharge+pricesummary.etax}</div>
+                        <div>Order total</div><div> &#36; {(pricesummary.subtotal-pricesummary.coupon-pricesummary.giftCard+pricesummary.shippingCharge+pricesummary.etax).toFixed(2)}</div>
 
 
                     </li>
